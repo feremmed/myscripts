@@ -6,8 +6,6 @@
 " Discretion, responsibility and empathy are requested.
 " enjoy vim today!
 
-"  carajo
-
 " S T A R T
 syntax on
 set encoding=utf-8             " Always use unicode
@@ -471,7 +469,6 @@ map <leader>gs :Git status<CR>
 map <leader>gw :Gwrite<CR>
 map <leader>gv :Git add _vimrc<CR>
 map <leader>gc :Git commit -m ''<left>
-map <leader>gb :Git commit -m '_vimrc22.04.'<left>
 map <leader>gp :Git push<CR>
 map <leader>gl :Git log<CR>
 

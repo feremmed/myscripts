@@ -2,6 +2,10 @@
 #SingleInstance Force
 #NoTrayIcon
 
+; esto es un coso
+
+
+
 #if GetKeyState("Capslock","T")
 s::left
 

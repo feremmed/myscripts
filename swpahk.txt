@@ -3,6 +3,15 @@
 #SingleInstance Force
 #NoTrayIcon
 
+
+
+; lalala
+
+
+
+
+
+
 F2::Suspend
 
 #if GetKeyState("Space","P")
