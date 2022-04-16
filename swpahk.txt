@@ -1,0 +1,243 @@
+
+
+#SingleInstance Force
+#NoTrayIcon
+
+F2::Suspend
+
+#if GetKeyState("Space","P")
+h::left
+
+#if GetKeyState("Space","P")
+j::down
+
+#if GetKeyState("Space","P")
+k::up
+
+#if GetKeyState("Space","P")
+l::right
+
+#if GetKeyState("Space","P")
+f::Esc
+
+#if GetKeyState("Space","P")
+o::enter
+
+#if GetKeyState("Space","P")
+i::BS
+
+#if GetKeyState("Space","P")
+y::^c
+
+#if GetKeyState("Space","P")
+p::^v
+
+#if GetKeyState("Space","P")
+d::Delete
+
+#if GetKeyState("Space","P")
+z::!F4
+
+#if GetKeyState(",","P")
+m::Volume_Mute
+
+#if GetKeyState("m","P")
+,::Volume_Down
+
+#if GetKeyState("m","P")
+.::Volume_Up
+
+
+
+
+#if GetKeyState("Space","P")
+h::left
+
+#if GetKeyState("Space","P")
+j::down
+
+#if GetKeyState("Space","P")
+k::up
+
+#if GetKeyState("Space","P")
+l::right
+
+#if GetKeyState("Space","P")
+o::enter
+
+#if GetKeyState("Space","P")
+i::BS
+
+#if GetKeyState("Space","P")
+y::^c
+
+#if GetKeyState("Space","P")
+p::^v
+
+#if GetKeyState("Space","P")
+d::Delete
+
+#if GetKeyState("Space","P")
+z::!F4
+
+#if GetKeyState("Space","P")
+,::Esc
+
+
+
+
+
+
+
+
+Space::
+While (GetKeyState("Space","P"))
+{
+if(GetKeyState("h","P")){
+    Send {left}
+}
+if(GetKeyState("j","P")){
+    Send {down}
+}
+if(GetKeyState("k","P")){
+    Send {up}
+}
+if(GetKeyState("l","P")){
+    Send {right}
+}
+if(GetKeyState("o","P")){
+    Send {enter}
+}
+if(GetKeyState("i","P")){
+    Send {BS}
+}
+if(GetKeyState("y","P")){
+    Send {^c}
+}
+if(GetKeyState("p","P")){
+    Send {^v}
+}
+if(GetKeyState("d","P")){
+    Send {Delete}
+}
+if(GetKeyState("z","P")){
+    Send {!F4}
+}
+if(GetKeyState("f","P")){
+    Send {Esc}
+}
+}
+Return
+
+
+
+
+
+
+
+
+
+
+
+While (GetKeyState("Space","P"))
+{ Sleep 100
+if GetKeyState("Space","P"){
+h::Left
+}
+if GetKeyState("Space","P"){
+j::down
+}
+if GetKeyState("Space","P"){
+k::up
+}
+if GetKeyState("Space","P"){
+l::right
+}
+if GetKeyState("Space","P"){
+o::enter
+}
+if GetKeyState("Space","P"){
+i::BS
+}
+if GetKeyState("Space","P"){
+y::^c
+}
+if GetKeyState("Space","P"){
+p::^v
+}
+if GetKeyState("Space","P"){
+d::Delete
+}
+if GetKeyState("Space","P"){
+z::!F4
+}
+if GetKeyState("Space","P"){
+f::Esc
+}
+}
+Return
+
+Space::
+While(GetKeyState("Space","P"))
+{ sleep 80
+if (GetKeyState("h","P")) {
+Send {left}
+}
+if (GetKeyState("j","P")) {
+Send {down}
+}
+if (GetKeyState("k","P")) {
+Send {up}
+}
+if (GetKeyState("l","P")) {
+Send {right}
+}
+}
+Return
+
+
+
+Suspend
+Esc::
+Suspend, Toggle
+h:: left
+j:: down
+k:: up
+l:: right
+o:: enter
+u:: BS
+
+
+
+z::
+While(GetKeyState("z","P"))
+{
+if(GetKeyState("h","P"))
+Send {left}
+}
+if(GetKeyState("j","P"))
+Send {down}
+}
+if(GetKeyState("k","P"))
+Send {up}
+}
+if(GetKeyState("l","P"))
+Send {right}
+}
+}
+Return
+
+
+Suspend
+F2::
+Suspend, Toggle
+h:: left
+j:: down
+k:: up
+l:: right
+o:: enter
+i:: BS
+x::^x
+y::^c
+p::^v
+u::^z
