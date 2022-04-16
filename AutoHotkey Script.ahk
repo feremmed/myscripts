@@ -2,7 +2,7 @@
 #SingleInstance Force
 #NoTrayIcon
 
-; esto es un coso modificados
+; esto es un coso modificados varias veces
 
 
 

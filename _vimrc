@@ -472,7 +472,7 @@ map <leader>gc :Git commit -m ''<left>
 map <leader>gp :Git push<CR>
 map <leader>gl :Git log<CR>
 
-"y a lucho gorrion
+"y a lucho gorrion y a esa maquina
 
 " %{FugitiveStatusline()}
 " rebase -i, diff, log, mergetool, difftool, Gsplit, Gedit, Gedit HEAD~3:%
