@@ -472,6 +472,8 @@ map <leader>gc :Git commit -m ''<left>
 map <leader>gp :Git push<CR>
 map <leader>gl :Git log<CR>
 
+"y a lucho gorrion
+
 " %{FugitiveStatusline()}
 " rebase -i, diff, log, mergetool, difftool, Gsplit, Gedit, Gedit HEAD~3:%
 " Gdiffsplit, Gvdiffsplit, Gread (git checkout -- filename), Gwrite, Gmove
