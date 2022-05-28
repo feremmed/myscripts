@@ -1,0 +1,486 @@
+
+================================================
+22 MAYO 28
+
+$100 Pan Avellaneda
+
+Alto Pucherovich
+
+
+================================================
+22 MAYO 27
+
+
+Mami debe extraerse sangre por análisis y de paso compra $200 de pan en La Avellaneda.
+
+Cocina Mami: ñoquis de harina integral.
+
+Nueva discusión por mis pertenencias secuestradas.
+
+Compra
+1kg osobuco
+½kg higado
+02  chorizo colorado
+
+2 Paltas
+1 rama apio
+2 hojas acelga
+1 ajo
+2 choclos pelados
+2 zanahorias
+2kg mandarinas
+
+Plan para mañana: Alto pucherovich
+
+Por fín creo haber encontrado una forma de registrar mis días, notas, tareas, pendientes, pensamientos, reflexiones, etc. bajo la modalidad en la que paradójicamente me encuentro escribiendo; a punta de .txt y lo mejor es que puedo tipear todos estos requerimientos juntos en un solo archivo y después se verá que se hace.
+Pienso que la ventaja de este sistema se encuentra en la simplicidad del mismo aunando mis dos pasiones; mecanografiar y vim. Pero los veneficios no acaban aquí, lo mejor de todo esto es que lograré organizarme de una buena vez por todas. Lamentablemente he perdido mucho tiempo intentando hacer del papel la herramienta que oficie de medio para lograrlos, pero hoy entiendo que en mi caso particular es inviable, pues la hoja de papel puede borrarse si se hace la escritura con lápiz, pero siempre tendrá muy pocos usos y como además padezco de perfeccionismo patológico es complejo para mi comenzar la escritura en una hoja sin evitar pensar que lo esté haciendo mal y deba corregirlo, cosa que en un archivo de texto esto no aplica pues se podrá editar las veces que se lo requiera sin temor a que nada se desgaste y donde no existe "caligrafía" de la cual arrepentirse, por eso manifiesto ¡Texto plano o muerte!
+
+PENDIENTES
+Recometar y ver nuevo video de mc tecnogy
+Transcribir compromisos anuales
+Planificar mes y forma de organizar tareas
+
+================================================
+22 MAYO 26
+
+$150 Pan Avellaneda
+
+Cocina Mami: Pollo a la cacerola con puré de Papas ¡Muy rico!
+
+Hoy aprendo markdown en YT
+
+Analizo viabilidad del uso de markdown y algunas aplicaciones y programas de organización del día, tareas, lectura, diarios personales, entre otros.
+
+Concluyo: Si bien todas y cada una de estas herramientas (obsidian, logloq, notion, plugins para .md en vim, etc) se ven muy útiles, creo que lo que aporta markdown al enriquecimiento del texto es muy poco, la "ventaja" gráfica visible en el texto me resulta insignificante y tranquilamente puedo arreglarme con el viejo y confiable .txt, que en vim se vé bien a mi gusto, no es la gran cosa, pero tampoco la necesito necesito y su previsualización me resulta molesta dada la duplicación del entorno textual el cual considero innecesario para las funciones que yo les doy a mis notas y ni halar del hecho de tener que aprenderse un nuevo lenguaje o uso por cada una de ellas. Como siempre digo "menos es más", y bajo esta simple pero poderosísima premisa seguiré usando notepad.
+
+Destapación bombillil
+
+compra
+1 yerba
+4 palta
+2 zapallito
+1 coliflor
+
+entrega de cayotes a Manolo, gringa y amiga de Clau
+
+
+"Los déviles sobrevien a base de huir y resguardarse"
+
+
+
+>>> mi_lista = [4, 3, 2, 1]
+>>> mi_lista.sort()
+>>> mi_lista
+[1, 2, 3, 4]       
+
+>>> mi_lista2 = [9, 8, 7, 6]
+>>> nueva_lista = sorted()
+>>> nueva_lista = sorted(mi_lista2)
+>>> nueva_lista
+[6, 7, 8, 9]
+>>> mi_lista2
+[9, 8, 7, 6]
+
+print(mitupla.count(13))
+>>> 1
+print(len(mitupla))
+>>> 5
+
+nombre, dia, mes, agno=mitupla
+print(nombre)
+print(dia)
+print(agno)
+print(mes)
+>>>Juan
+>>>13
+
+
+>>>1995
+>>>1
+
+len   (longitud de solicitid)
+
+
+================================================
+22 MAYO 25
+
+Voy a comprar pan a La Pricesa y a pesar de haber llegado tarde (08am) aún no abrían, tube que esperar y además me vendieron pan de ayer, mal ahí, me han roto el corazón, volveré a comprar pan en la Avellaneda que parecen más serios, cumplidores y tempraneros.
+
+Cocino nueva receta; polenta con huevos y jurel.
+
+Día de acto y desfile del jardín
+Mami vende en feria del Paseo (recauda $4000 aprox.)
+En casa a la vuelta del desfile. 
+
+"En un país de gorilas, el patriotismo es de cartón"
+"El patriotismo de estos es una gran cáscara muy brillante y bien adornada, pero vacia, muy vacia por dentro"
+
+
+Nueva discusión por la desasertada desición, en mi opinion de venta en feria en modo romería
+
+
+07 / 11   12 / 16
+15 / 19   20 / 24
+23 / 03   04 / 08
+
+
+11 / 14   15 / 18
+18 / 21   22 / 01
+01 / 04   05 / 08
+
+09 / 12   13 / 16
+16 / 19   20 / 23
+23 / 02   03 / 06
+
+
+09 / 13 / 17
+17 / 21 / 01
+01 / 05 / 09
+
+
+7 a 13  2
+12  21  3
+20  08  4
+
+inte chof 
+info dom1 dom2 jar1 jar2 peon niñe sec1 sec2
+rec1 rec2 muc1 muc2 muc3 muc4 man1 man2
+
+
+================================================
+22 MAYO 11
+
+1 pollo
+1 pez
+1 jamon
+
+frizables
+
+papel higienico, cepillos, pelapapas, crema, aceite para pesaje.
+
+CARGADORES, cañito, garrafa, castrar minichis
+
+platos, jarra, fuente, pizzeras, planchas, perchas, 
+
+
+================================================
+22 MAYO 22
+
+Llama "Franco" Personal por promo Arnet
+N° Trámite Arnet:
+192833721
+
+014 + DNI Claudia
+
+N° Trámite de nueva línea Personal:
+59294085
+
+3820  Inicial
+1910  %50 Descuento
+1110  Descuento adhesión de línea Personal
+ 600  Costo de línea Personal
+-----------------------------
+1700  Lo que queda
+
+* Se conseguirán más descuentos empadronandose en la web de personal una vez funcionen los nuevos servicios
+* Se conseguirán más descuentos descargando y usando la app Personalpay
+
+
+=================================================
+22 MAYO 05
+
+
+U s d z c M
+
+Plug 'mhinz/vim-startify'
+
+session
+cambiar script autohotkey quitar ctrl de space
+
+mcg diarios para personas con déficit de B12
+2500 diarios por 7 meses
+100 menores de 50años
+1000 mayores
+
+x10ml      venta  pres 
+    metil
+2069       12000    58      garden of life      https://articulo.mercadolibre.com.ar/MLA-1118628064-garden-of-life-b12-vegano-gluten-free-spray-organico-_JM?searchVariation=174074985233#searchVariation=174074985233&position=2&search_layout=stack&type=item&tracking_id=cbec5bd9-dfdf-43d4-8237-1b58485fb081
+2165       12990    60      why not natural     https://articulo.mercadolibre.com.ar/MLA-851280315-b12-meti-subling-liquida-veganos-5000-mcg-x-60-ml-usa-_JM?searchVariation=54529712158#searchVariation=54529712158&position=22&search_layout=stack&type=item&tracking_id=720faea0-c2ae-448b-ba78-bd6cec6da28a
+2500       30000   120      tropical oasis      https://articulo.mercadolibre.com.ar/MLA-1129494416-tropical-oasis-ultra-max-b12-drops-gotas-4-fl-oz-_JM?searchVariation=174347981015#searchVariation=174347981015&position=5&search_layout=stack&type=item&tracking_id=dd7495db-d1d1-4188-91fa-acfafda6af1d
+2880       16990    59      horbaach            https://articulo.mercadolibre.com.ar/MLA-1112118695-horbaach-vitamin-b12-5000-mcg-2-oz-liquid-vegan-_JM?searchVariation=173902961366#searchVariation=173902961366&position=17&search_layout=stack&type=item&tracking_id=720faea0-c2ae-448b-ba78-bd6cec6da28a
+3390       20000    59      bio naturals        https://articulo.mercadolibre.com.ar/MLA-1129487353-bio-naturals-b12-adults-kids-drops-gotas-2-fl-oz-_JM?searchVariation=174347898198#searchVariation=174347898198&position=36&search_layout=stack&type=item&tracking_id=00b3e0b7-1916-4a0d-8d90-15a2d73ab14b
+4576       27000    59      solgar              https://articulo.mercadolibre.com.ar/MLA-1127430195-solgar-liquid-b-12-2000mcg-2-fl-oz-sublingual-_JM?searchVariation=174300082818#searchVariation=174300082818&position=28&search_layout=stack&type=item&tracking_id=32fc20e2-7905-4cc1-bcb0-a641f6926762
+    ciano
+1153        6800    59      finest&nutrition    https://articulo.mercadolibre.com.ar/MLA-909461175-vitamina-b12-liquida-sublingual-5000mcg-vegetar-usa-_JM?searchVariation=173804464211#searchVariation=173804464211&position=15&search_layout=stack&type=item&tracking_id=0d67a43c-0cef-4b0c-b5c5-bf0c27e29be7
+  59        4707   750      natier              https://articulo.mercadolibre.com.ar/MLA-926714707-vitamina-b12-vegana-bebible-concentrada-natier-250ml-pack-x3-_JM?searchVariation=88814554365#searchVariation=88814554365&position=3&search_layout=stack&type=item&tracking_id=befff59c-9c17-4333-9f56-87803fa5eed7
+
+
+
+
+                           mctechnology170318@gmail.com
+
+
+
+Genial es bueno saber que nos das respuesta a tus seguidores, esperaré ansioso ese nuevo video, de todas formas no pretendo apurarte porque sé que tenés tus asuntos, y con este último video tengo para entretenerme un buen tiempo, es más, al de "Como configurar Vim como VS Code" todavía le sigo sacando jugo y se agradece mucho mi hermano. 
+
+Tengo algunas consultas para hacerte pero no se si este es el mejor medio, luego tu me dirás por donde te hago el resto. Aquí la primera;
+¿Por que te decidiste por Vim sobre NeoVim? Porque según dicen NeoVim vino a mejorar Vim (dicen).
+    No soy un informático nativo, solo soy un fulano que viene de otro oficio y tras las pandemia decidí aprender programación, esto me lo crucé por casualidad y me gustó mucho. Me encuentro estudiando por mi cuenta, desde un lugar "seguro" para mi que es Windows 10, sé que no es lo mejor para esta profesión, pero no quiero ponerme a trastear con Linux ahora porque me llevaría un tiempo que aún no puedo invertir en ello y además mi PC es la de la casa,  de uso familiar y no puedo cambiar todo de golpe por que a mi se me ocurre, así que por ahora esta será la que deba tolerarme a mi y yo a ella.
+   Cuestión que cuando me puse a probar neovim en esta computadora limitada de recursos, NeoVim la petaba, porque tenía que correrlo desde la terminal y para usar un programa debía correr dos, imaginate que mi compu quedaba como loquita. Por eso me quedé con Vim que resultó más práctico y ligero y ya me acostumbré a su versión gráfica (GVim).
+
+   En mi reciente uso de estas herramientas por lo único que puedo llegar a extrañar Nvim son los fondos que te permite ya sea el difuso transparente o ponerle fotos, dibujos, imágenes en general, etc. lo cual definitivamente es una tontería a los efectos de la programación y es por eso no lo extraño tanto, con esto no estoy diciendo que esa sea la única "ventaja" que le ví a Nvim, solo es la única que yo le conocía y quizas Gvim las tenga también, pero no se donde ni me importa tanto. Es por eso que te pregunto a vos que tenés más experiencia y una mejor compu ¿por que elegís Vim? ¿Lo considerás mejor? ¿Es solo una cuestión de gustos? ¿Es mejor uno que el otro según el caso? También leí en foros que hay quienes después de probar Nvim (más por hipe) vuelven de rodillas a Vim porque las supuestas "mejoras" de Nvim no superan la solidez del viejo y confiable Vim de toda la vida, otros no piensan lo mismo y tendrán sus motivos, la verdad no sé muy bien sus diferencias y no llego a entender todo lo que hay en disputa, por eso te lo consulto, ya que ahora te considero mi nuevo maestro shaolín de Vim/Python proclamado por mi, aunque no quieras (es broma).
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Hola mi hermano:
+
+Hace tiempo quería responderte pero por cuestiones de la vida (sobre todo de mi vida de padre) se me hizo difícil hacerlo, ahora que he logrado un momento de paz y soledad me dispongo a escribirte. Recorde viendo tu vimrc que tenías este correo electónico, me pareció mejor y más directo hacerlo por aquí, salvo que digas lo contrario.
+
+En principio debo decir que no entendí muy bien las diferencias que mencionaste, y no creo que sea porque esten mal expresadas, muy probablemente sea porque soy nuevo en esto y la mayoría de todo esto al principio me cuesta mucho, hasta que luego, al igual que el burro, por perseverancia y repetición acabo entendiendolo. 
+
+Pero si me quedó claro el concepto general; No hay que casarse con ningún editor, programa, tecnología, lenguaje, moda, etc. Usar lo que mejor se desempeñe en cada requerimiento. 
+
+Por mi parte me tocará investigar más, sé que en un solo comentario es mucha info para tipear y lejos estoy de quererte molestar y lo que venís haciendo desde tu canal ya es muchísimo para mi, imagino que para otros también, y simpre te estaré muy agradecido.
+
+Te cuento que en este momento me encuentro terminando de probar los últimos plugins de la lista que recomendaste en el video de convertir vim en un VSC, voy descargandolos de a uno y haciendo pruebas funcionales hasta considerar que resulta útiles. Una vez me sucedió que por querer probar todos los plugins juntos de un video que ví, acabé instalando cosas de NVim y lua en mi vim que lo destrozaron al pobre quedando inutilizable por una semana hasta que pude limpiarlo del todo y restaurarlo.
+
+
+En fin, ahora los paso por pruebas individuales sin enloquecerme, además escuché por ahí que no es bueno tener tener tantos plugins, igual supongo que la cosa va de gustos y costumbres y es muy personal, solo con algunos pocos de los que mostraste no he tenido afinidad, pero definitivamente me han servido todos como aprendizaje, por ejemplo; el minimapa me parece bonito, pero en el uso diario me dí cuenta que no va conmigo, pues como yo uso el editor, este plugin me estorba, pero nunca lo habría sabido de no ser porque me lo diste a conocer. El que si me cambió la vida hasta ahora es el Floaterm ya que como me encuentro estudiando Python, me recontra sirve para tener a mano un terminal o bash donde correr líneas de Python al instante, en la misma ventada del editor, super rápido y genial. Después los demás también han sido de gran ayuada como ser el traductor, las integraciones con git, el rainbow para los brackets, etc. e iclusive algunos que ya tenía pero que les encontré más usos desde que nos los mostraste, para lo último deje lo mejor, mañana me voy a bajar el vimtools que creo será una gran herramienta. 
+
+Bueno, ya no te aburro más con mi perolata, como siempre muchas gracias por todo, te mando un gran abrazo vimtual a la distacia.
+
+
+
+
+
+
+
+
+
+
+=================================================
+Antes del
+22 MAYO 04
+
+.
+
+" show tabs. eol and spaces
+set list
+" chars to use to show the tabs, eol and spaces
+
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni $HOME/vimfiles/autoload/plug.vim -Force
+
+<LeftMouse>     - Left mouse button press
+<RightMouse>    - Right mouse button press
+<MiddleMouse>   - Middle mouse button press
+<LeftRelease>   - Left mouse button release
+<RightRelease>  - Right mouse button release
+<MiddleRelease> - Middle mouse button release
+<LeftDrag>      - Mouse drag while Left mouse button is pressed
+<RightDrag>     - Mouse drag while Right mouse button is pressed
+<MiddleDrag>    - Mouse drag while Middle mouse button is pressed
+<2-LeftMouse>   - Left mouse button double-click
+<2-RightMouse>  - Right mouse button double-click
+<3-LeftMouse>   - Left mouse button triple-click
+<3-RightMouse>  - Right mouse button triple-click
+<4-LeftMouse>   - Left mouse button quadruple-click
+<4-RightMouse>  - Right mouse button quadruple-click
+<X1Mouse>       - X1 button press
+<X2Mouse>       - X2 button press
+<X1Release>     - X1 button release
+<X2Release>     - X2 button release
+<X1Drag>        - Mouse drag while X1 button is pressed
+<X2Drag>        - Mouse drag while X2 button is pressed
+
+math.prep.soyhenry.com
+data.prep.soyhenry.com
+ j k k k   k j j j j  
+   
+   
+kPlug 'junegunn/vim-easy-align'                      " Alineador "gaip ?"
+Plug 'Yggdroot/indentLine'                          " Insterta lineas verticales de indentacion
+Plug '907th/vim-auto-save'                          "
+Plug 'dyng/auto_mkdir'                              "
+" Autocompletado y complementos
+Plug 'vim-python/python-syntax'                     "
+Plug 'neoclide/coc.nvim', {'branch': 'release'}     "
+Plug 'tpope/vim-surround'                           " Surrounding cs"' ysw)
+Plug 'alvan/vim-closetag'                           " Autocierre de tags HTML
+Plug 'mattn/emmet-vim'                              "
+Plug 'ap/vim-css-color'                             " CSS Color Preview
+Plug 'mg979/vim-visual-multi', {'branch': 'master'} " Multicursor
+Plug 'sheerun/vim-polyglot'                         " Paquete de idiomas con resaltado
+" Navegar y buscar
+Plug 'easymotion/vim-easymotion'                    " Movimiento en velocidad
+Plug 'preservim/tagbar'                             " Barra de muestra de tags
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "
+Plug 'christoomey/vim-tmux-navigator'               " Navegador de divisiones C-h C-l C-j C-k
+" Git Integration
+Plug 'mhinz/vim-signify'                            "Muestra los cambios en numberbar, only VCSs
+Plug 'tpope/vim-fugitive'                           "Asistente de git
+Plug 'tpope/vim-rhubarb'                            "Si fugitive es Git, rhubarb es Hub  
+Plug 'junegunn/gv.vim'                              "Un navegador de git commit en Vim
+" NERDTREE y complementos
+Plug 'preservim/nerdtree'                           " tree explorer
+Plug 'ryanoasis/vim-devicons'                       " Iconos para NERDTree, Airlines, etc
+" Airlines
+Plug 'vim-airline/vim-airline'                      "
+Plug 'vim-airline/vim-airline-themes'               "
+Plug 'bling/vim-bufferline'                         "
+" Temas
+Plug 'morhetz/gruvbox'                              "
+
+https://www.spotify.com/ar/duo/invite/4178AZ24BYZ7yC5/
+https://www.youtube.com/c/freeCodeCampEspa%C3%B1ol/videos?view=0&sort=da&flow=grid
+
+" ???
+set complete=.,w,b,u,t,
+set completeopt=longest,menuone " Use the popup menu when there is only one match.
+set completeopt=preview   " Hide the documentation preview windows
+set omnifunc=syntaxcomplete#Complete
+	
+\gvim.sexe\vim82\syntax
+
+e * :
+e - :
+> * :
+>** :	
+" =======================================
+" SETS IN STATE OF TEST
+" =======================================
+
+set hlsearch            " highlighted search results
+
+" create needed directories if they don't exist
+if !isdirectory(&backupdir)
+    call mkdir(&backupdir, "p")
+edif
+if !isdirectory(&directory)
+    call mkdir(&directory, "p")
+edif
+if !isdirectory(&undodir)
+    call mkdir(&undodir, "p")
+endif
+
+set colorcolumn=100   " show rule in column 100
+
+" show to split windows
+set splitbelow
+
+au VimRezised *:wincmd = " resize splits when windows are reduced
+
+" show cursor line
+set cursorline
+
+augroup cline
+    " delete any old autocommand
+    au!
+    " remove cursor line on windows leavea and when on insert mode
+    au WinLeave,InsertEnter * set nocursorline
+    " show cursor line on windows enter or when exit from insert
+    au WinEnter,InsertLeave * set cursorline
+augroup END
+
+" use 256 colors when possible
+colorscheme base16-materia
+set t_Co=256
+if exist('+termguicolors')
+    let &t_8f = "\ <Esc>[38;2%lu;%lu,%lum"
+    let &t_8b = "\ <Esc>[48;2%lu;%lu,%lum"
+    set termguicolors
+endif
+
+set wildmenu
+
+" when scrolling, keep cursor 5 lines away from screen border
+set scrolloff=5
+
+" search
+set incsearch " incremental search
+set ignorecase " search is case insensitive but you can add \C to make it sensitive
+set smartcase " will automatically switch to a case-sensitive search if you use any capital letters
+" ===========================
+" mappings
+" ===========================
+
+" move between windows
+noremap <TAB><TAB> <C-w><C-w>
+
+" do nothing when F1 is pressed
+noremap <F1> <nop>
+inoremap <F1> <nop>
+
+" tab navigation mapping
+nnoremap tn :tabn<CR>
+nnoremap tp :tabp<CR>
+nnoremap tt :$tabnew<CR>
+
+" move text lines and blocks
+nnoremap <C-j> :m ,+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc> :m .+<CR>==gi
+inoremap <C-k> <Esc> :m .2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+
+" override next and previous search to show in the middle of the screen (zz)
+" and also open just enough folds (zv) to make the line in wich the cursor
+" is located not folded
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" clear search results
+nnoremap <silent><space> :nohl<CR>
+
+" select current line without indentation
+nnoremap vv ^vg_
+
+" remap up and down keys to navigate on warp lines
+noremap j gj
+noremap k gk
+
+" clear empty spaces at  the of lineas on save of python files
+autocmd bufWritePre *.py :%s/\s\+$//e
+
+" ???
+set complete=.,w,b,u,t,
+set completeopt=longest,menuone " Use the popup menu when there is only one match.
+set completeopt=preview   " Hide the documentation preview windows
+set omnifunc=syntaxcomplete#Complete
+
+Sinaptics TouchPad V8.1
+
+map ,0 gaip
+map ,1 gaip2
+map ,2 gaip*
+map ,3 gaip**
+map ,4 gaip<CR>*
+map ,5 gaip<CR>**
+map ,6 gaip<right>*
+map ,7 gaip<right>**
+map ,8 gaip-
+map ,9 gaip<CR>-
+
+map ,0 gaip<CR><CR>*
+map ,0 gaip<CR><CR>**
+map ,0 gaip<CR>2
+map ,0 gaip<CR><CR>2
+
+ enter-
+ enter**
+nte link de zoom: https://us02web.zoom.us/j/82499682790
+
+https://app.slack.com/client/T0306HP5GGY/D031A78M8RX/thread/C02UQ81D4FQ-1643314396.140500
+
+158.727
+https://www.sordum.org/7952/dns-jumper-v2-2/
+https://www.speedguide.net/downloads.php
+https://github.com/hellzerg/optimizer/releases
+
+powerlevel10k
+
+poniendote a prueba lograras resultados
+
