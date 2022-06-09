@@ -1,177 +1,207 @@
-
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+AGOSTO
+29 Cumpleaños Karina Carabajal y María Eugenia Medina
+18 Cumpleaños Claudia Gauna
+15 Día de San Martín Lunes (Finde largo)
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+JULIO
+09 Día de la Independecia
+01 Cumpleaños Julieta Gutierrez
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+JUNIO 
+Gran Feriado largo{
+    20 Día de la Bandera
+    19 Día del Padre - Tercer Domingo de Junio
+    17 Día de Güemes
+    }
+14 Instala Arnet
+11 Feria del paseo
+================================================
+[ (<- HOY ->) ]
+22 JUNIO 10 Viernes
+Compra: 
+Cocina: 
+Progra: 
+Activi: 
+Huerta: 
+Suceso: 
+Tipeos: 
+Reflex: 
+Pendie: 
+================================================
+22 JUNIO 9 Jueves
+Compra: 295 300gs Queso
+Cocina: Pizza
+Progra: winget upgrade --all
+Activi: Mañana guardia pediatrica por Nehuen, no vacunas covid menor 6 años
+Huerta: Cobertura con yuyo seco
+Suceso: 
+Tipeos: 
+Reflex: 
+Pendie: 
+================================================
+22 JUNIO 8 Miercoles
+Compra: 200 pan
+Cocina: Guiso de arroz
+Progra: Instalar e integrar PyCharm con Anaconda
+Huerta: Cobertura con yuyo seco
+Suceso: Visita Teresita, Nehuen vomitos y nauceas nocturnas
+Reflex: Todo es al pedo
+================================================
+22 JUNIO 7 Martes
+Compra: 250 Verdu
+Cocina: Sopa
+Progra: Estudio PyCharm - PildorasInformaticas.py
+Activi: Espera instalción Arnet que nunca llegó, llamo para reprogramar
+================================================
+22 JUNIO 6 Lunes
+Compra: 220 Galletas y fajor
+Cocina: Polenta con Calabaza y cebolla caramelizada
+Progra: PildorasInformaticas.py
+Activi: Dibujo/tarea de Güemes para Lolo
+Suceso: Viaja Bruja
+================================================
+22 JUNIO 5 Domingo
+Cocina: Polenta con salsa
+Progra: Todo el día en la cama reconfigurando floaterm
+================================================
+22 JUNIO 3 Viernes
+Compra: 3 harinas
+        2 sobres levadura
+        1 salsa de tomates
+Cocina: Yo, Alto guiso de arroz.
+Activi: Llevar enanos al jardín
+Reflex: Mejor un buen dictador, que un mal demócrata
+================================================
+22 JUNIO 2 Jueves
+Compra: 200 Pan de panadería
+Cocina: Mami cocinó hamburgesa de pollo con queso y puré
+Activi: Intento llamar a Personal por línea nueva, male sal
+        Casa super sellada Día 3 tragaluz techo cocina
+Huerta: Siembra:
+        Muro 1 Rabanito, Calendula, copete
+        Bancal 1 Movimiento tierra
+        Bancal 2 Remolacha, Habas y Acelga
+        Bancal 3 Guardería Paltas Lote A
+Reflex: Este es el ultimo día de mala onda y sufrimiento. A partir de mañana todo será amor y paz. Acompañar a Lolo a tender la cama
+================================================
+22 JUNIO 1 Miercoles
+Compra:  280 Burlete
+        1250 Pendrive
+        1500 Aprox: Queso, leche deslactosada, naranjas, hamburgesa, manteca, pilas
+Cocina: Polenta con higado encebollado y chorizo colorado
+Activi: Termino de migrar toda la data de Mami en nuevo pendrive 64GB
+        Peso gatitos 125 y 220 gs.
+        Suceso: Muere gatito de menor peso
+================================================
+22 MAYO 31 Martes
+Compra: 210 3/4 pan
+        560 burlete
+        250 harinas
+Activi: Resulta ser que las Shell funcionaban bien y yo tube un lapsus en el que olvidé de tipear el comando "cd" (Change Directory) situación estable por hoy
+        hablita walett bat+btc
+        Casa super sellada Día 1
+================================================
+22 MAYO 30 Lunes
+Compra:  70 1/4 pan
+        950 Boina
+        210 Detergnente
+        710 Muni
+        530 Verdu
+       1470 Total
+Cocina:Alto guiso de lenteajas con chorizo colorado
+Activi: Contacoto con Dario fotográfo
+        Averigüo pendrive 64GB
+            mejor precio Güemes y 9 de Julio $1100
+            mejor precio/Stock Play Sation   $1200
+            Llega Chip Personal 667212
+Gestión de Artnet, Reprograma instalación 07/06/22
+Reflex: Es imposible que el patriotismo prosere en el reino del individualismo
+================================================
+22 MAYO 29 Domingo
+Compra: 150 Pan
+Activi: migración de datos y alta de walett pero restringida
+Reflex: Considero que el origen de todos los males del individuo, del conjunto social y el mundo entero, se originan desde la Arrogancia. Este descubrimiento contiente la siguiente complejidad; por un lado es más trabajoso su desarrollo, pues me enfrenta a tener que mirar hacia adentro y entender que la inmensa mayoría de los problemas que advierto en la sociedad también están dentro mio como induviduo no soy ajeno a la sociedad, estoy construido por ella y esto hace el viaje más largo porque ya no podemos quedarnos en la simple pero poderosa premisa de la arrogancia como origen de todos los males, esto me obliga a bucear en las profundidades del ser usandome a mi mismo como mi propio ratón de experimentos, no me quejo pues así debe ser siempre pues desde adentro se empieza, de adentro hacia afuera, y habrá que dentenerte en las cuestiones propias lo cual es bueno, pues de paso revisamos aquello que quizas devía de ordenarse. no hay mejor forma de mejorar una conjunto social si cada individuo apuesta por su propio mejoramiento individual, y este mismo sujeto debará tomarse también el trabajo de intentar mejorar el conjunto a traves de si mismo, para luego, y recien desde allí el conjunto tendrá que lograr buscar su camino de mejoramiento todos juntos, y podría seguir fundamentandolo pero esto es un simple anotador para no olvidar conceptos
+Pendie:
+[x] Pagar mes municipal
 ================================================
 22 MAYO 28
-
-$100 Pan Avellaneda
-
-Alto Pucherovich
-
+Compra: 100 Pan Avellaneda
+Cocina: Alto Pucherovich
+Reflex: No se como tomar esto, como una buena o mala notica, resulta que la terminal cmd no funciona en ninguna de sus formas; git bash, terminal de vim, cmd incluido. Lo cual implicaría verme obligado a quitar de una buena vez Windows de la compu. Por lo tanto me puse a investigar más sobre distribuciones ligeras de linux, y la conclusiones a las que llego son; Elementry OS, Manjaro, Lubuntu, daghi, entre otras serian buenas opciones. Pero Lamentablemente aún dependo de conseguir una memoria externa de 64gb aprox. para pasar toda la data de Claudia fuera de la pc por seguridad. Mejor relación $/gb memorias 64gb x 5 unidades mas/menos para evitar costo de envío.
+Pendie:
+[-] Ver nuevo video de mc tecnogy
+[x] Planificar mes y forma de organizar tareas
 
 ================================================
 22 MAYO 27
+Compra: 1kg osobuco, ½kg higado, 02 chorizo colorado, 2 Paltas, 1 rama apio, 2 hojas acelga, 1 ajo, 2 choclos pelados, 2 zanahorias, 2kg mandarinas
+Cocina: ñoquis de harina integral.
+Suceso: Mami debe extraerse sangre por análisis y de paso compra $200 de pan en La Avellaneda.
+        Nueva discusión por mis pertenencias secuestradas.
+        Por fín creo haber encontrado una forma de registrar mis días, notas, tareas, pendientes, pensamientos, reflexiones, etc. bajo la modalidad en la que paradójicamente me encuentro escribiendo; a punta de .txt y lo mejor es que puedo tipear todos estos requerimientos juntos en un solo archivo y después se verá que se hace. Pienso que la ventaja de este sistema se encuentra en la simplicidad del mismo aunando mis dos pasiones; mecanografiar y vim. Pero los veneficios no acaban aquí, lo mejor de todo esto es que lograré organizarme de una buena vez por todas. Lamentablemente he perdido mucho tiempo intentando usar el papel como medio, pero hoy entiendo que en mi caso particular es inviable, pues la hoja de papel puede borrarse si se hace la escritura con lápiz, pero siempre tendrá muy pocos usos y como además padezco de perfeccionismo patológico es complejo para mi comenzar la escritura en una hoja, sin evitar pensar que lo esté haciendo mal y deba corregirlo, cosa que en un archivo de texto esto no aplica pues se podrá editar las veces que se lo requiera sin temor a que nada se desgaste y donde no existe "caligrafía" de la cual arrepentirse, por eso manifiesto ¡Texto plano o muerte!, tanta es su versatilidad que de hecho este texto lo he corregido y reeditado una semama después, y probablemente lo siga haciendo más veces...
 
-
-Mami debe extraerse sangre por análisis y de paso compra $200 de pan en La Avellaneda.
-
-Cocina Mami: ñoquis de harina integral.
-
-Nueva discusión por mis pertenencias secuestradas.
-
-Compra
-1kg osobuco
-½kg higado
-02  chorizo colorado
-
-2 Paltas
-1 rama apio
-2 hojas acelga
-1 ajo
-2 choclos pelados
-2 zanahorias
-2kg mandarinas
-
-Plan para mañana: Alto pucherovich
-
-Por fín creo haber encontrado una forma de registrar mis días, notas, tareas, pendientes, pensamientos, reflexiones, etc. bajo la modalidad en la que paradójicamente me encuentro escribiendo; a punta de .txt y lo mejor es que puedo tipear todos estos requerimientos juntos en un solo archivo y después se verá que se hace.
-Pienso que la ventaja de este sistema se encuentra en la simplicidad del mismo aunando mis dos pasiones; mecanografiar y vim. Pero los veneficios no acaban aquí, lo mejor de todo esto es que lograré organizarme de una buena vez por todas. Lamentablemente he perdido mucho tiempo intentando hacer del papel la herramienta que oficie de medio para lograrlos, pero hoy entiendo que en mi caso particular es inviable, pues la hoja de papel puede borrarse si se hace la escritura con lápiz, pero siempre tendrá muy pocos usos y como además padezco de perfeccionismo patológico es complejo para mi comenzar la escritura en una hoja sin evitar pensar que lo esté haciendo mal y deba corregirlo, cosa que en un archivo de texto esto no aplica pues se podrá editar las veces que se lo requiera sin temor a que nada se desgaste y donde no existe "caligrafía" de la cual arrepentirse, por eso manifiesto ¡Texto plano o muerte!
-
-PENDIENTES
-Recometar y ver nuevo video de mc tecnogy
-Transcribir compromisos anuales
-Planificar mes y forma de organizar tareas
+Pendie:
+[-] Recometar y ver nuevo video de mc tecnogy
+[x] Transcribir compromisos anuales
+[-] Planificar mes y forma de organizar tareas
 
 ================================================
 22 MAYO 26
 
-$150 Pan Avellaneda
-
-Cocina Mami: Pollo a la cacerola con puré de Papas ¡Muy rico!
-
-Hoy aprendo markdown en YT
-
+Compra: 150 Pan Avellaneda 1 yerba, 4 palta, 2 zapallito, 1 coliflor
+Mami: Pollo a la cacerola con puré de Papas ¡Muy rico!
+Activi: Hoy aprendo markdown en YT
 Analizo viabilidad del uso de markdown y algunas aplicaciones y programas de organización del día, tareas, lectura, diarios personales, entre otros.
-
 Concluyo: Si bien todas y cada una de estas herramientas (obsidian, logloq, notion, plugins para .md en vim, etc) se ven muy útiles, creo que lo que aporta markdown al enriquecimiento del texto es muy poco, la "ventaja" gráfica visible en el texto me resulta insignificante y tranquilamente puedo arreglarme con el viejo y confiable .txt, que en vim se vé bien a mi gusto, no es la gran cosa, pero tampoco la necesito necesito y su previsualización me resulta molesta dada la duplicación del entorno textual el cual considero innecesario para las funciones que yo les doy a mis notas y ni halar del hecho de tener que aprenderse un nuevo lenguaje o uso por cada una de ellas. Como siempre digo "menos es más", y bajo esta simple pero poderosísima premisa seguiré usando notepad.
 
-Destapación bombillil
-
-compra
-1 yerba
-4 palta
-2 zapallito
-1 coliflor
-
-entrega de cayotes a Manolo, gringa y amiga de Clau
-
-
-"Los déviles sobrevien a base de huir y resguardarse"
-
-
-
->>> mi_lista = [4, 3, 2, 1]
->>> mi_lista.sort()
->>> mi_lista
-[1, 2, 3, 4]       
-
->>> mi_lista2 = [9, 8, 7, 6]
->>> nueva_lista = sorted()
->>> nueva_lista = sorted(mi_lista2)
->>> nueva_lista
-[6, 7, 8, 9]
->>> mi_lista2
-[9, 8, 7, 6]
-
-print(mitupla.count(13))
->>> 1
-print(len(mitupla))
->>> 5
-
-nombre, dia, mes, agno=mitupla
-print(nombre)
-print(dia)
-print(agno)
-print(mes)
->>>Juan
->>>13
-
-
->>>1995
->>>1
-
-len   (longitud de solicitid)
-
+Destapación bombillil/ entrega de cayotes a Manolo, gringa y amiga de Clau
+Reflex: "Los déviles sobrevien a base de huir y resguardarse"
 
 ================================================
 22 MAYO 25
+Compra: Voy a comprar pan a La Pricesa y a pesar de haber llegado tarde (08am) aún no abrían, tube que esperar y además me vendieron pan de ayer, mal ahí, me han roto el corazón, volveré a comprar pan en la Avellaneda que parecen más serios, cumplidores y tempraneros.
+Cocina: Yo, nueva receta; polenta con huevos y jurel.
+Activi: Día de acto y desfile del jardín/ Mami vende en feria del Paseo (recauda $4000 aprox.)/ En casa a la vuelta del desfile. 
+Reflex: "En un país de gorilas, el patriotismo es de cartón"/ "El patriotismo de estos es una gran cáscara muy brillante y bien adornada, pero vacia, muy vacia por dentro"
+Suceso: Nueva discusión por la desasertada desición, en mi opinion de venta en feria en modo romería
 
-Voy a comprar pan a La Pricesa y a pesar de haber llegado tarde (08am) aún no abrían, tube que esperar y además me vendieron pan de ayer, mal ahí, me han roto el corazón, volveré a comprar pan en la Avellaneda que parecen más serios, cumplidores y tempraneros.
-
-Cocino nueva receta; polenta con huevos y jurel.
-
-Día de acto y desfile del jardín
-Mami vende en feria del Paseo (recauda $4000 aprox.)
-En casa a la vuelta del desfile. 
-
-"En un país de gorilas, el patriotismo es de cartón"
-"El patriotismo de estos es una gran cáscara muy brillante y bien adornada, pero vacia, muy vacia por dentro"
-
-
-Nueva discusión por la desasertada desición, en mi opinion de venta en feria en modo romería
-
-
+Plan repartición horaria de empleados de la finca
 07 / 11   12 / 16
 15 / 19   20 / 24
 23 / 03   04 / 08
 
-
-11 / 14   15 / 18
-18 / 21   22 / 01
-01 / 04   05 / 08
-
-09 / 12   13 / 16
-16 / 19   20 / 23
-23 / 02   03 / 06
-
+11 / 14   15 / 18   |   09 / 12   13 / 16
+18 / 21   22 / 01   |   16 / 19   20 / 23
+01 / 04   05 / 08   |   23 / 02   03 / 06
 
 09 / 13 / 17
 17 / 21 / 01
 01 / 05 / 09
 
-
 7 a 13  2
 12  21  3
 20  08  4
-
 inte chof 
 info dom1 dom2 jar1 jar2 peon niñe sec1 sec2
 rec1 rec2 muc1 muc2 muc3 muc4 man1 man2
-
-
 ================================================
 22 MAYO 11
-
+Deber comprar
 1 pollo
 1 pez
 1 jamon
-
 frizables
-
+Burlete
 papel higienico, cepillos, pelapapas, crema, aceite para pesaje.
-
 CARGADORES, cañito, garrafa, castrar minichis
-
 platos, jarra, fuente, pizzeras, planchas, perchas, 
-
-
 ================================================
-22 MAYO 22
-
-Llama "Franco" Personal por promo Arnet
+22 MAYO 22 
+Activi: Llama "Franco" Personal por promo Arnet
 N° Trámite Arnet:
 192833721
-
 014 + DNI Claudia
-
 N° Trámite de nueva línea Personal:
 59294085
 
@@ -216,7 +246,6 @@ x10ml      venta  pres
 
 
 
-
                            mctechnology170318@gmail.com
 
 
@@ -229,8 +258,6 @@ Tengo algunas consultas para hacerte pero no se si este es el mejor medio, luego
    Cuestión que cuando me puse a probar neovim en esta computadora limitada de recursos, NeoVim la petaba, porque tenía que correrlo desde la terminal y para usar un programa debía correr dos, imaginate que mi compu quedaba como loquita. Por eso me quedé con Vim que resultó más práctico y ligero y ya me acostumbré a su versión gráfica (GVim).
 
    En mi reciente uso de estas herramientas por lo único que puedo llegar a extrañar Nvim son los fondos que te permite ya sea el difuso transparente o ponerle fotos, dibujos, imágenes en general, etc. lo cual definitivamente es una tontería a los efectos de la programación y es por eso no lo extraño tanto, con esto no estoy diciendo que esa sea la única "ventaja" que le ví a Nvim, solo es la única que yo le conocía y quizas Gvim las tenga también, pero no se donde ni me importa tanto. Es por eso que te pregunto a vos que tenés más experiencia y una mejor compu ¿por que elegís Vim? ¿Lo considerás mejor? ¿Es solo una cuestión de gustos? ¿Es mejor uno que el otro según el caso? También leí en foros que hay quienes después de probar Nvim (más por hipe) vuelven de rodillas a Vim porque las supuestas "mejoras" de Nvim no superan la solidez del viejo y confiable Vim de toda la vida, otros no piensan lo mismo y tendrán sus motivos, la verdad no sé muy bien sus diferencias y no llego a entender todo lo que hay en disputa, por eso te lo consulto, ya que ahora te considero mi nuevo maestro shaolín de Vim/Python proclamado por mi, aunque no quieras (es broma).
-
-
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -248,22 +275,17 @@ Por mi parte me tocará investigar más, sé que en un solo comentario es mucha 
 Te cuento que en este momento me encuentro terminando de probar los últimos plugins de la lista que recomendaste en el video de convertir vim en un VSC, voy descargandolos de a uno y haciendo pruebas funcionales hasta considerar que resulta útiles. Una vez me sucedió que por querer probar todos los plugins juntos de un video que ví, acabé instalando cosas de NVim y lua en mi vim que lo destrozaron al pobre quedando inutilizable por una semana hasta que pude limpiarlo del todo y restaurarlo.
 
 
-En fin, ahora los paso por pruebas individuales sin enloquecerme, además escuché por ahí que no es bueno tener tener tantos plugins, igual supongo que la cosa va de gustos y costumbres y es muy personal, solo con algunos pocos de los que mostraste no he tenido afinidad, pero definitivamente me han servido todos como aprendizaje, por ejemplo; el minimapa me parece bonito, pero en el uso diario me dí cuenta que no va conmigo, pues como yo uso el editor, este plugin me estorba, pero nunca lo habría sabido de no ser porque me lo diste a conocer. El que si me cambió la vida hasta ahora es el Floaterm ya que como me encuentro estudiando Python, me recontra sirve para tener a mano un terminal o bash donde correr líneas de Python al instante, en la misma ventada del editor, super rápido y genial. Después los demás también han sido de gran ayuada como ser el traductor, las integraciones con git, el rainbow para los brackets, etc. e iclusive algunos que ya tenía pero que les encontré más usos desde que nos los mostraste, para lo último deje lo mejor, mañana me voy a bajar el vimtools que creo será una gran herramienta. 
+En fin, ahora los paso por pruebas individuales sin enloquecerme, además escuché por ahí que no es bueno tener tener tantos plugins, igual supongo que la cosa va de gustos y costumbres y es muy personal, solo con algunos pocos de los que mostraste no he tenido afinidad, pero definitivamente me han servido todos como aprendizaje, por ejemplo; el minimapa me parece bonito, pero en el uso diario me dí cuenta que no va conmigo, pues la manera como yo uso el editor, este plugin me estorba, pero nunca lo habría sabido de no ser porque me lo diste a conocer. El que si me cambió la vida hasta ahora es el Floaterm ya que como me encuentro estudiando Python, me recontra sirve para tener a mano un terminal o bash donde correr líneas de Python al instante, en la misma ventada del editor, super rápido y genial. Después los demás también han sido de gran ayuada como ser el traductor, las integraciones con git, el rainbow para los brackets, etc. e iclusive algunos que ya tenía pero que les encontré más usos desde que nos los mostraste, para lo último deje lo mejor, mañana me voy a bajar el vimtools que creo será una gran herramienta. 
 
 Bueno, ya no te aburro más con mi perolata, como siempre muchas gracias por todo, te mando un gran abrazo vimtual a la distacia.
-
-
-
-
-
-
-
-
 
 
 =================================================
 Antes del
 22 MAYO 04
+
+
+
 
 .
 
@@ -483,4 +505,81 @@ https://github.com/hellzerg/optimizer/releases
 powerlevel10k
 
 poniendote a prueba lograras resultados
+
+=================================================
+
+COMPROMISOS ANUALES
+
+DICIEMBRE
+30 Cumpleaños Carolina Arias
+19 Cumpleaños Claudia Carabajal
+08 Día de la "virgen"
+04 Cumpleaños Marta Tevez
+
+NOVIEMBRE
+20 Día de la soberanía
+18 Cumpleaños Sabrina Zarate
+16 Cumpleaños Lorenzo Medina
+15 Cumpleaños Pablo Barroso
+
+OCTUBRE
+Día de la Madre - Tercer Domingo de Octubre
+30 Cumpleaños Gloria Nieva
+12 Cumpleaños Agostina Martin
+12 Día del genocidio Americano
+
+SEPTIEMBRE
+19 Cumpleaños Jesica Vargas y Silvia Peloso
+15 Día del Milagro
+01 Cumpleaños Lucas Gauna 
+
+AGOSTO
+29 Cumpleaños Karina Carabajal y María Eugenia Medina
+18 Cumpleaños Claudia Gauna
+15 Día de San Martín
+
+JULIO
+10 Cumpleaños Morena Medina
+09 Día de la Independecia
+01 Cumpleaños Julieta Gutierrez
+
+JUNIO
+Día del Padre - Tercer Domingo de Junio
+20 Día de la Bandera
+17 Día de Güemes
+
+MAYO
+28 Cumpleaños Ornella Ordoñez
+26 Cumpleaños Día de Metán
+25 Día de Revolución de Mayo y Cumpleaños Oscar Cortez
+17 Cumpleaños Guillermo Talarico
+01 Día del Trabajador
+
+ABRIL
+24 Cumpleaños Carlos Carabajal
+22 Cumpleaños Nehuen Medina y Marcela Gauna
+13 Cumpleaños Natalia Salazar
+10 Cumpleaños Camila Del Pozo
+02 Malvinas
+Jueves y Viernes Santo (mediados del mes)
+
+MARZO
+27 Cumpleaños Manolo Carabajal
+24 Día de la Memoria
+12 Cumpleaños Mabel Medina
+08 Cumpleaños Belén Carabajal
+05 Cumpleaños Nicole Villalobos
+01 Carnaval
+
+FEBRERO
+28 Carnaval
+10 Cumpleaños Sandra Carabajal
+04 Cumpleaños Benjamín Talarico
+
+ENERO
+18 Cumpleaños Celina Gutierrez
+10 Cumpleaños Amanda Venencia
+02 Cumpleaños Olga Medina
+
+
 

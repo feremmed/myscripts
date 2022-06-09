@@ -1,16 +1,7 @@
-
+z
 
 #SingleInstance Force
 #NoTrayIcon
-
-
-
-; lalala kekeke tetete
-
-
-
-
-
 
 F2::Suspend
 

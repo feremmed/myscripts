@@ -1,17 +1,16 @@
+
 " ¡ ¡  A A L O O H H A A  ! !
-
-
 
 " This is the feremmed vimrc. It is free to use and you are free to use it, with all that that implies. 
 " Discretion, responsibility and empathy are requested.
-" enjoy vim today!
+" enjoy vim! stay coding
+
 
 " S T A R T
 syntax on
 set encoding=utf-8             " Always use unicode
 set nocompatible               " No compatible with Vi commands
-set ignorecase                 " To ignore case in searchs
-set clipboard=unnamed          " Use clipboard of OS in Vim
+set clipboard=unnamed,unnamedplus          " Use clipboard of OS in Vim
 set nu rnu ru                  " Enable hybrid mode by current line number and relative number / enable ruler for columns
 set noeb vb t_vb=              " No error bells (beep off) / Chose 'visual bell' effect rather than 'beeping'
 set ww=<,>,h,l                 " Wichwrap to continue move in the previous/next line when it reaches the beginnig/end of the line
@@ -20,6 +19,15 @@ set completeopt-=preview
 set complete=.,w,b,u,t,        " ¿?
 set completeopt=longest,menuone " Use the popup menu when there is only one match.
 set omnifunc=syntaxcomplete#Complete
+
+" Prueba de init.vim de MC Technology
+if &term =~'^screen'        " tmux compatibilidad
+    set ttymouse=xterm2     " modo mouse extendido
+endif
+set cursorline cursorcolumn " línea horizontal/vertical
+set showtabline=1           " mostrar match
+set title                   " mostrar nombre del archivo editado
+set titlestring=VIM:\ %25.55F\ %a%r%m titlelen=70
 
 set smarttab
 set expandtab                  " Transform Tabs in spaces
@@ -44,13 +52,12 @@ set hidden                     " Navigate freely between windows even though the
 set shortmess+=c               " This shortens about every message to a minimum
 set hlsearch                   " Highlighted search results
 set wildmenu                   " Make use of the 'status line' to show availables commands in that menu options
-" set wildmode=longest,list      " Enable directories autocompletation silmile to bash
 
 set incsearch                  " Incremental search
 set ignorecase                 " Search is case insensitive but you can add \C to make it sensitive
 set smartcase                  " Will automatically switch to a case-sensitive search if you use any capital letters
 set scrolloff=5                " When scrolling, keep cursor 5 lines away from screen border
-set linespace=2                " Line space size
+ set linespace=2               " Line space size
 set undofile                   " Enable save undo file
 set undodir=~/.vim/undodir//   " Direction of register undo file
 " set backupdir=~/.vim/.backup//
@@ -70,15 +77,14 @@ filetype indent plugin on      " Allow plugins by file type (required for plugin
 " Plugins
 call plug#begin('~/.vim/plugged')
 " Generals
+Plug 'mhinz/vim-startify'
+" Plug 'xolox/vim-session'
 Plug 'junegunn/vim-easy-align'                       " Aligner "gaip ?"
 Plug 'Yggdroot/indentLine'                           " Instert verticals lines of identation
 Plug '907th/vim-auto-save'                           " Automatic save files
 Plug 'dyng/auto_mkdir'                               " Automatic make direction
 " Autocomplete and complements
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'davidhalter/jedi-vim', { 'for': 'python' }     " Autocompletion library
-" Plug 'vim-scripts/AutoComplPop'                      " 
-" Plug 'ervandew/supertab'                             " Enable TAB key to search in list
 Plug 'scrooloose/syntastic'                          " 
 
 Plug 'tpope/vim-surround'                            " Surrounding cs" " ' ysw)
@@ -128,8 +134,11 @@ call plug#end()
 "============================================================
 
 " M O V E M E N T
-map J 10j
-map K 10k
+map J 16j
+map K 16k
+map H 32h
+map L 32l
+map M zz35j35k
 map <Up> gk
 map <Down> gj
 imap jj <Esc>j
@@ -160,7 +169,6 @@ tnoremap ff <C-\><C-n>
 tnoremap <esc> <C-\><C-n>
 
 " C O M M A N D
-map Q B
 map df d$
 map dc d0
 map dh yyP
@@ -169,7 +177,6 @@ map vf v$
 map vc v0
 map U <C-r>
 map cc cc<esc>
-map M zz35j35k
 map <F5> :term<CR>
 map <TAB> :bnext<CR>
 map <S-TAB> :bprev<CR>
@@ -188,7 +195,8 @@ map <leader>r :set nowrap!<CR>
 map <leader>u :set nu! rnu!<CR>
 map <leader>s :source ~/_vimrc<CR>
 map <leader>c <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-
+map <leader>' Q FloatermNew --name=fer python<CR>NERDTreeToggle<CR>visual<CR>
+map <leader>9 Q vsp<CR>vsp<CR>vsp<CR>visual<CR>
 
 " D I R E C T    A C C S E S S
 map <leader>E :e E:/eproj
@@ -220,8 +228,6 @@ imap !! ¡!<left>
 imap ?? ¿?<left>
 
 " C O M M A   L A Y E R
-imap ,? ¿
-imap ,! ¡
 map ,, o<esc>
 imap ,, <esc>o
 imap ,p <esc>pi
@@ -243,7 +249,7 @@ map ,xj d15j<esc>
 imap ,xj <esc>d15ji
 map ,xk d15k<esc>
 imap ,xk <esc>d15ki
-imap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>15ki
+imap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>10ki
 
 "Plug 'tpope/vim-surround'
 map ,[ ysiw[
@@ -285,6 +291,20 @@ map <F4> <C-up>
 
 " wWsSrgGxqQyYwetiodpVAHJKLnNVBM
 
+
+" Cursor line and column
+augroup cline
+    au!
+    au WinLeave,InsertEnter * set nocursorline
+    au WinEnter,InsertLeave * set cursorline
+augroup END
+
+augroup ccolumm
+    au!
+    au WinLeave,InsertEnter * set nocursorcolumn
+    au WinEnter,InsertLeave * set cursorcolumn
+augroup END
+
 " mark ending line
 set list
 set lcs=tab:··
@@ -294,7 +314,7 @@ set lcs=eol:¬
 " Vim info, save file information
 set vi=%,'50
 set vi+=\"100,:100
-set vi+=n~/.vim/info/.viminfo
+set vi+=n~/vimfiles/info/.viminfo
 
 " Disable relativenumber in insert mode
 augroup numbertoggle
@@ -306,6 +326,7 @@ augroup END
 " To resize window width
 map = :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 map - :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
+
 
 " To close buffer without closing splits
 nnoremap <leader>B :lclose<bar>b#<bar>bd #<CR>
@@ -320,10 +341,10 @@ noremap <leader><TAB> <C-w><C-w>
 " set guifont=HackGenNerd_Console:h10:cANSI:qDRAFT
 set guifont=mononoki_Nerd_Font_Mono:h10:cANSI:qDRAFT
 " set guifont=mononoki_NF:h10:cANSI:qDRAFT
+" set guifont=MesloLGM_Nerd_Font_Mono:h9:cANSI:qDRAFT
 map <leader># :set guifont<CR>
 map <leader>$ :set guifont=*<CR>
 map <leader>% :set guioptions=m<left><left>
-" mesloGS NF
 
 " A B B R E V I A T I O N S
 :ab elq El quirquincho Cascarilla se empacho con sopaipilla y a la sala de la villa fue llevado en carretilla, panza arriba en la camilla suspiraba cascarilla y el doctor Sietecuchillas, se rascaba la barbilla. Un sahumerio de jarilla con un te de manzanilla suelen hacer maravillas, sino hay que meter cuchilla. Eso va a hacer si me pilla se repuso el armadillo y olvidando el calzoncillo se fugo por la ventanilla. Desde ahora cascarilla no come mas sopaipillas, ahora come pajarilla desgrasada a la parrilla.
@@ -415,8 +436,8 @@ nnoremap <Leader>p :Ack! --py  E:\eproj\<left><left><left><left><left><left><lef
 let g:tmux_navigator_no_mappings = 1
 nnoremap <leader>1 :TmuxNavigateUp<CR>
 nnoremap <leader>2 :TmuxNavigateDown<CR>
-nnoremap <leader>3 :TmuxNavigateLeft<CR>
-nnoremap <leader>4 :TmuxNavigateRight<CR>
+nnoremap <left> :TmuxNavigateLeft<CR>
+nnoremap <right> :TmuxNavigateRight<CR>
 
 " Rainbow --------------------------------------
 let g:rainbow_active = 1
@@ -431,6 +452,8 @@ nnoremap <leader>tw :TranslateW
 xnoremap <leader>tw :TranslateW
 nnoremap <leader>tr :TranslateR
 xnoremap <leader>tr :TranslateR
+" if '!' is provided, the plugin will perform a reverse translation by changing
+
 " COC --------------------------------------
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -467,12 +490,9 @@ map <leader>gi :Git init<CR>
 map <leader>gn :Git clone<CR>
 map <leader>gs :Git status<CR>
 map <leader>gw :Gwrite<CR>
-map <leader>gv :Git add _vimrc<CR>
 map <leader>gc :Git commit -m ''<left>
 map <leader>gp :Git push<CR>
 map <leader>gl :Git log<CR>
-
-"y a lucho gorrion y a esa maquina
 
 " %{FugitiveStatusline()}
 " rebase -i, diff, log, mergetool, difftool, Gsplit, Gedit, Gedit HEAD~3:%
@@ -481,7 +501,7 @@ map <leader>gl :Git log<CR>
 " 
 " 
 " adding to vim-airline's statusline
-" let g:webdevicons_enable_airline_statusline = 1 
+" let g:webevicons_enable_airline_statusline = 1 
 
 
 "set statusline=%f\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %=%(%l,%c%V\ %Y\ %=\ %P%)
