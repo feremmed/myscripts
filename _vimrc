@@ -13,17 +13,12 @@ set nocompatible               " No compatible with Vi commands
 set clipboard=unnamed,unnamedplus          " Use clipboard of OS in Vim
 set nu rnu ru                  " Enable hybrid mode by current line number and relative number / enable ruler for columns
 set noeb vb t_vb=              " No error bells (beep off) / Chose 'visual bell' effect rather than 'beeping'
-set ww=<,>,h,l                 " Wichwrap to continue move in the previous/next line when it reaches the beginnig/end of the line
 set history=1000               " Increase the number of commands saved by vim which by default only brings 20
 set completeopt-=preview
 set complete=.,w,b,u,t,        " ¿?
 set completeopt=longest,menuone " Use the popup menu when there is only one match.
 set omnifunc=syntaxcomplete#Complete
-
 " Prueba de init.vim de MC Technology
-if &term =~'^screen'        " tmux compatibilidad
-    set ttymouse=xterm2     " modo mouse extendido
-endif
 set cursorline cursorcolumn " línea horizontal/vertical
 set showtabline=1           " mostrar match
 set title                   " mostrar nombre del archivo editado
@@ -34,7 +29,6 @@ set expandtab                  " Transform Tabs in spaces
 set tabstop=4                  " Tabsotop
 set shiftwidth=4               " Spaces for autoindenting
 set softtabstop=4              " Remove a full TAB when press <BS>
-
 set autoindent                 " Auto indentation when use Entrer key
 set noshowmode                 " Hide modes insert, normal, etc.
 set showmatch                  " higlight matching parentheses and brackets
@@ -45,19 +39,16 @@ set laststatus=2               " This makes Vim show a single status line
 set mouse=a                    " Enable use of mouse in Vim
 set splitright                 " Vertical splits will automatically be to the right
 set hidden                     " Navigate freely between windows even though they contain modifications
-
-" set nobackup                   " Disable backup files creation
-" set noswapfile                 " Disable swap files creation
-" set nowritebackup              " Disable write and replace files while editing
 set shortmess+=c               " This shortens about every message to a minimum
 set hlsearch                   " Highlighted search results
 set wildmenu                   " Make use of the 'status line' to show availables commands in that menu options
-
 set incsearch                  " Incremental search
 set ignorecase                 " Search is case insensitive but you can add \C to make it sensitive
 set smartcase                  " Will automatically switch to a case-sensitive search if you use any capital letters
 set scrolloff=5                " When scrolling, keep cursor 5 lines away from screen border
- set linespace=2               " Line space size
+set nobackup                   " Disable backup files creation
+set noswapfile                 " Disable swap files creation
+set nowritebackup              " Disable write and replace files while editing
 set undofile                   " Enable save undo file
 set undodir=~/.vim/undodir//   " Direction of register undo file
 " set backupdir=~/.vim/.backup//
@@ -73,12 +64,10 @@ let python_highlight_all = 1   " Activate Python language
 filetype indent plugin on      " Allow plugins by file type (required for plugins!)
 
 " ============================================================
-
 " Plugins
 call plug#begin('~/.vim/plugged')
 " Generals
 Plug 'mhinz/vim-startify'
-" Plug 'xolox/vim-session'
 Plug 'junegunn/vim-easy-align'                       " Aligner "gaip ?"
 Plug 'Yggdroot/indentLine'                           " Instert verticals lines of identation
 Plug '907th/vim-auto-save'                           " Automatic save files
@@ -91,8 +80,6 @@ Plug 'tpope/vim-surround'                            " Surrounding cs" " ' ysw)
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}  " Multicursor
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
-" Run tests
-" Plug 'janko-m/vim-test', { 'for': ['python'] }
 " Plug 'tpope/vim-dispatch'                            " asynchronus
 " Navigate and search
 Plug 'easymotion/vim-easymotion'                     " movement in speed
@@ -117,7 +104,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 " Asistentes de lenguajes no dependientes de COC 
 Plug 'machakann/vim-Verdin'                          " Vim syntax assistant 
-" Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex'}" Text file compiler
 " Ack code search (requires ack or ag installed in the system)
 Plug 'mileszs/ack.vim'
 Plug 'sharkdp/bat'                                   " Colorscheme to Ack and fzf
@@ -129,21 +115,33 @@ Plug 'voldikss/vim-translator'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'                          " Paquete de idiomas con resaltado
 
+Plug 'segeljakt/vim-silicon'  " fotos para códigos
+Plug 'RRethy/vim-illuminate' " resalta palabras iguales a la palabra debajo del cursor como VSC
+" Plug 'Yggdroot/indentLine' " ver indentación como VSC
+Plug 'mctechnology17/vim-executor'
+Plug 'puremourning/vimspector', { 'do': './install_gadget.py --all' } " debbuger
+Plug 'mctechnology17/vimtools'
+" Plug 'APZelos/blames.nvim'  " inspirado en complemento Gitlens de VSC
+" Plug 'stsewd/fzf-checkout.vim'   " complemento FZF para GIT }}}
+"
 call plug#end()
 
 "============================================================
 
 " M O V E M E N T
-map J 16j
-map K 16k
-map H 32h
-map L 32l
-map M zz35j35k
-map <Up> gk
-map <Down> gj
-imap jj <Esc>j
-imap kk <Esc>k
-imap hh <Esc>h
+noremap J 18j
+noremap K 18k
+noremap H 34h
+noremap L 34l
+noremap M zt
+noremap S zs
+xnoremap S zs
+" zz33j33k
+nnoremap <Up> gk
+nnoremap <Down> gj
+inoremap jj <Esc>j
+inoremap kk <Esc>k
+inoremap hh <Esc>h
 xnoremap <C-j> :move '>+1<CR>gv-gv
 xnoremap <C-k> :move '<-2<CR>gv-gv
 " nnoremap <C-j> :m .+1<CR>==
@@ -154,143 +152,110 @@ vnoremap < <gv
 vnoremap > >gv
 
 " S E A R C H
-nnoremap n nzzzv
-nnoremap N Nzzzv
-nnoremap <silent><space> :nohl<CR>
+noremap n nzzzv
+noremap N Nzzzv
+noremap <silent><space> :nohl<CR>
 
 " S E L E C T (whithout tab space)
 nnoremap vv ^vg_
 
 " O U T
-nmap ff i
-imap ff <esc>
-vmap ff <esc>
+nnoremap ff i
+inoremap ff <esc>
+vnoremap ff <esc>
 tnoremap ff <C-\><C-n>
 tnoremap <esc> <C-\><C-n>
 
 " C O M M A N D
-map df d$
-map dc d0
-map dh yyP
-map dl yyp
-map vf v$
-map vc v0
-map U <C-r>
-map cc cc<esc>
-map <F5> :term<CR>
-map <TAB> :bnext<CR>
-map <S-TAB> :bprev<CR>
-map <leader>= <C-w>=
-map <leader>8 <C-w>x
-map <leader>W :browse confirm saveas<CR>
-map <leader>A :browse vsp<CR>
-map <leader>D :browse sp<CR>
-map <leader>n :enew<CR>
-map <leader>a :vsp<CR>
-map <leader>w :w!<CR>
-map <leader>q :q!<CR>
-map <leader>z :qa!<CR>
-map <leader>b :bdelete!<CR>
-map <leader>r :set nowrap!<CR>
-map <leader>u :set nu! rnu!<CR>
-map <leader>s :source ~/_vimrc<CR>
-map <leader>c <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-map <leader>' Q FloatermNew --name=fer python<CR>NERDTreeToggle<CR>visual<CR>
-map <leader>9 Q vsp<CR>vsp<CR>vsp<CR>visual<CR>
+nnoremap df d$
+nnoremap dc d0
+nnoremap dh yyP
+nnoremap dl yyp
+nnoremap vf v$
+nnoremap vc v0
+nnoremap U <C-r>
+nnoremap cc cc<esc>
+nnoremap <F5> :term<CR>
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprev<CR>
+nnoremap <leader>= <C-w>=
+nnoremap <leader>8 <C-w>x
+nnoremap <leader>W :browse confirm saveas<CR>
+nnoremap <leader>A :browse vsp<CR>
+nnoremap <leader>D :browse sp<CR>
+nnoremap <leader>n :enew<CR>
+nnoremap <leader>2 :tabnew<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-h> :tabprev<CR>
+nnoremap <leader>a :vsp<CR>
+nnoremap <leader>w :w!<CR>
+nnoremap <leader>q :q!<CR>
+nnoremap <leader>z :qa!<CR>
+nnoremap <leader>b :bdelete!<CR>
+nnoremap <leader>r :set nowrap!<CR>
+nnoremap <leader>u :set nu! rnu!<CR>
+nnoremap <leader>s :source ~/_vimrc<CR>
+nnoremap <leader>c <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+nnoremap <leader>' Q FloatermNew --name=fer python<CR>NERDTreeToggle<CR>visual<CR>
+nnoremap <leader>9 Q vsp<CR>vsp<CR>vsp<CR>visual<CR>
+nnoremap <leader>0 :set ww=<,>,h,l<CR>
 
 " D I R E C T    A C C S E S S
-map <leader>E :e E:/eproj
-map <leader>F :e F:/
-map <leader>C :e C:/
-map <leader>G :e G:/
-map <leader>v :e ~/_vimrc<CR>
-map <leader>vg :sav G:/eproj/AVim/backup_vimrc/_vimrc22.04.
+nnoremap <leader>E :e E:/eproj
+nnoremap <leader>F :e F:/
+nnoremap <leader>C :e C:/
+nnoremap <leader>G :e G:/
+nnoremap <leader>v :e ~/_vimrc<CR>
+nnoremap <leader>d :e ~/myDocs<CR>
 
 " <leader>  ||  + !#$%QRTYUIOPSGZXCVBNM
 
 " P C    E m u l a t o r
-vmap <C-c> y<Esc>
+vnoremap <C-c> y<Esc>
 " map <C-x> x
-map <C-v> p
-imap <C-v> <Esc>pi
-map <C-e> <Esc>ggVG
-imap <C-e> <Esc>ggVG
-map <CR> i<CR><esc>
-map <BS> X
-imap xx <Delete>
-imap << <><left>
-imap (( ()<left>
-imap [[ []<left>
-imap {{ {}<left>
-imap '' ''<left>
-imap "" ""<left>
-imap !! ¡!<left>
-imap ?? ¿?<left>
+noremap <C-v> p
+inoremap <C-v> <Esc>pi
+noremap <C-e> <Esc>ggVG
+inoremap <C-e> <Esc>ggVG
+noremap <CR> i<CR><esc>
+noremap <BS> X
+inoremap xx <Delete>
+inoremap << <><left>
+inoremap (( ()<left>
+inoremap [[ []<left>
+inoremap {{ {}<left>
+inoremap '' ''<left>
+inoremap "" ""<left>
+inoremap !! ¡!<left>
+inoremap ?? ¿?<left>
 
 " C O M M A   L A Y E R
-map ,, o<esc>
-imap ,, <esc>o
-imap ,p <esc>pi
-imap ,a <esc>la
-imap ,h <esc>ha
-imap ,j <esc>ji
-imap ,k <esc>ki
-imap ,z <esc>zzi
-imap ,v <esc>viwyi
-map ,v viwy
-imap ,b <esc>ciw
-map ,b diw
-imap ,m <esc>mi
-imap ,c <Esc>0i
-map ,c 0
-imap ,f <Esc>$a
-map ,f $
-map ,xj d15j<esc>
-imap ,xj <esc>d15ji
-map ,xk d15k<esc>
-imap ,xk <esc>d15ki
-imap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>10ki
-
-"Plug 'tpope/vim-surround'
-map ,[ ysiw[
-map ,] ysiw]
-map ,( ysiw(
-map ,) ysiw)
-map ,{ ysiw{
-map ,} ysiw}
-map ,< ysiw<
-map ,> ysiw>
-map ,' ysiw'
-map ," ysiw"
-map ,l[ yss[
-map ,l] yss]
-map ,l( yss(
-map ,l) yss)
-map ,l{ yss{
-map ,l} yss}
-map ,l< yss<
-map ,l> yss>
-map ,l' yss'
-map ,l" yss"
-
-" Plug 'junegunn/vim-easy-align'
-map ,00 gaip
-map ,01 gaip2
-map ,02 gaip*
-map ,03 gaip**
-map ,04 gaip<CR>*
-map ,05 gaip<CR>**
-map ,06 gaip<right>*
-map ,07 gaip<right>**
-map ,08 gaip-
-map ,09 gaip<CR>-
-
-" Plug 'multicursor'
-map <F3> <C-down>
-map <F4> <C-up>
+noremap ,, o<esc>
+inoremap ,, <esc>o
+inoremap ,p <esc>pi
+inoremap ,a <esc>la
+inoremap ,h <esc>ha
+inoremap ,j <esc>ji
+inoremap ,k <esc>ki
+inoremap ,z <esc>zzi
+inoremap ,v <esc>viwyi
+noremap ,v viwy
+inoremap ,b <esc>ciw
+noremap ,b diw
+inoremap ,m <esc>mi
+inoremap ,c <Esc>0i
+noremap ,c 0
+inoremap ,f <Esc>$a
+noremap ,f $
+noremap ,xj d15j<esc>
+inoremap ,xj <esc>d15ji
+noremap ,xk d15k<esc>
+inoremap ,xk <esc>d15ki
+inoremap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>10ki
 
 " wWsSrgGxqQyYwetiodpVAHJKLnNVBM
 
+" VANILA VIM
 
 " Cursor line and column
 augroup cline
@@ -316,6 +281,7 @@ set vi=%,'50
 set vi+=\"100,:100
 set vi+=n~/vimfiles/info/.viminfo
 
+
 " Disable relativenumber in insert mode
 augroup numbertoggle
   autocmd!
@@ -324,9 +290,11 @@ augroup numbertoggle
 augroup END
 
 " To resize window width
-map = :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
-map - :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
+nnoremap = :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
+nnoremap - :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 
+nnoremap + :exe " resize " . (winheight(0) * 3/2)<CR>
+nnoremap _ :exe " resize " . (winheight(0) * 2/3)<CR>
 
 " To close buffer without closing splits
 nnoremap <leader>B :lclose<bar>b#<bar>bd #<CR>
@@ -342,18 +310,59 @@ noremap <leader><TAB> <C-w><C-w>
 set guifont=mononoki_Nerd_Font_Mono:h10:cANSI:qDRAFT
 " set guifont=mononoki_NF:h10:cANSI:qDRAFT
 " set guifont=MesloLGM_Nerd_Font_Mono:h9:cANSI:qDRAFT
-map <leader># :set guifont<CR>
-map <leader>$ :set guifont=*<CR>
-map <leader>% :set guioptions=m<left><left>
+nnoremap <leader># :set guifont<CR>
+nnoremap <leader>$ :set guifont=*<CR>
+nnoremap <leader>% :set guioptions=m<left><left>
 
 " A B B R E V I A T I O N S
 :ab elq El quirquincho Cascarilla se empacho con sopaipilla y a la sala de la villa fue llevado en carretilla, panza arriba en la camilla suspiraba cascarilla y el doctor Sietecuchillas, se rascaba la barbilla. Un sahumerio de jarilla con un te de manzanilla suelen hacer maravillas, sino hay que meter cuchilla. Eso va a hacer si me pilla se repuso el armadillo y olvidando el calzoncillo se fugo por la ventanilla. Desde ahora cascarilla no come mas sopaipillas, ahora come pajarilla desgrasada a la parrilla.
 
+:ab lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui cia deserunt mollit anim id est laborum.
+
 :ab thi This is a short filler text, who knows you? Get out I told you!
 
 :ab cl console.log();<esc>hh
+
 "============================================================
- " P L U G    C O N F I G U R A T I O N
+" P L U G    C O N F I G U R A T I O N
+
+"Plug 'tpope/vim-surround'
+nnoremap ,[ ysiw[
+nnoremap ,] ysiw]
+nnoremap ,( ysiw(
+nnoremap ,) ysiw)
+nnoremap ,{ ysiw{
+nnoremap ,} ysiw}
+nnoremap ,< ysiw<
+nnoremap ,> ysiw>
+nnoremap ,' ysiw'
+nnoremap ," ysiw"
+nnoremap ,l[ yss[
+nnoremap ,l] yss]
+nnoremap ,l( yss(
+nnoremap ,l) yss)
+nnoremap ,l{ yss{
+nnoremap ,l} yss}
+nnoremap ,l< yss<
+nnoremap ,l> yss>
+nnoremap ,l' yss'
+nnoremap ,l" yss"
+
+" Plug 'junegunn/vim-easy-align'
+nnoremap ,00 gaip
+nnoremap ,01 gaip2
+nnoremap ,02 gaip*
+nnoremap ,03 gaip**
+nnoremap ,04 gaip<CR>*
+nnoremap ,05 gaip<CR>**
+nnoremap ,06 gaip<right>*
+nnoremap ,07 gaip<right>**
+nnoremap ,08 gaip-
+nnoremap ,09 gaip<CR>-
+
+" Plug 'multicursor'
+map <F3> <C-down>
+map <F4> <C-up>
 
 " Gruvbox --------------------------------
 set termguicolors
@@ -370,7 +379,7 @@ let g:auto_save = 1          " enable AutoSave on Vim startup
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
 " let g:airline_statusline_ontop = 1
-:let g:airline_extensions = []
+let g:airline_extensions = []
 
 " NERDTree --------------------------------
 nnoremap <leader>tt :NERDTreeToggle<CR>
@@ -388,13 +397,13 @@ let g:NERDTreeSyntaxEnabledExactMatches = ['node_modules', 'favicon.ico'] " enab
 let g:webdevicons_conceal_nerdtree_brackets = 1
 
 " EasyMotion --------------------------------
-nmap <leader>e <Plug>(easymotion-s2)
+nnoremap <leader>e <Plug>(easymotion-s2)
 
 "EasyAlign Config
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+xnoremap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
 
 " Syntactic --------------------------------
 let g:syntastic_python_checkers = ['flake8', 'mypy']
@@ -427,15 +436,15 @@ cnoreabbrev Ack Ack!
 let g:ackprg = "ag --vimgrep"
 let g:ackhighlight = 1
 
-nnoremap <C-j> :cnext<CR>
-nnoremap <C-k> :cprevious<CR>
+" nnoremap <C-j> :cnext<CR>
+" nnoremap <C-k> :cprevious<CR>
 
 nnoremap <Leader>p :Ack! --py  E:\eproj\<left><left><left><left><left><left><left><left><left><left>
 
 " Tmux --------------------------------------
 let g:tmux_navigator_no_mappings = 1
-nnoremap <leader>1 :TmuxNavigateUp<CR>
-nnoremap <leader>2 :TmuxNavigateDown<CR>
+"nnoremap <up> :TmuxNavigateUp<CR>
+"nnoremap <down> :TmuxNavigateDown<CR>
 nnoremap <left> :TmuxNavigateLeft<CR>
 nnoremap <right> :TmuxNavigateRight<CR>
 
@@ -467,32 +476,40 @@ function! s:check_back_space() abort
 endfunction
 
 " Floaterm --------------------------------------
-let g:floaterm_wintype = 'vsplit'
-let g:floaterm_position = 'rightbelow'
-let g:floaterm_autoclose = 2
-let g:floaterm_width = 55
+" let g:floaterm_wintype = 'vsplit'
+" let g:floaterm_position = 'rightbelow'
+let g:floaterm_autoclose = 0
+" let g:floaterm_autoinsert = v:false
+let g:floaterm_winblend = 9
+" let g:floaterm_width = 55
+let g:floaterm_title = 'floaterm($1|$2)'
 
-map <leader>f :FloatermNew --name=fer python<CR>
-xmap <leader>f :FloatermSend --name=fer<CR>
-map <leader>,k :FloatermKill<CR>
-map <leader>,t :FloatermToggle<CR>
-map <leader>,s :FloatermShow<CR>
-map <leader>,h :FloatermHide<CR>
-map <leader>,t :FloatermToggle<CR>
-map <leader>,f :FloatermFirst<CR>
-map <leader>,l :FloatermLast<CR>
-map <leader>,n :FloatermNext<CR>
-map <leader>,p :FloatermPrev<CR>
-map <leader>,u :FloatermUpdate<CR>
+nnoremap ,1 :FloatermNew --width=55 --wintype=vsplit --name=f1 --position=rightbelow python<CR>
+nnoremap ,2 :FloatermNew --height=18 --wintype=split --name=f2 --position=below python<CR>
+nnoremap ,3 :FloatermNew --width=55 --wintype=vsplit --name=f3 --position=rightbelow<CR>
+nnoremap ,4 :FloatermNew --height=18 --wintype=split --name=f4 --position=below<CR>
+
+nnoremap <leader>f :FloatermNew --name=fer python<CR>
+xnoremap <leader>f :FloatermSend<CR>
+nnoremap ,k :FloatermKill<CR>
+nnoremap ,t :FloatermToggle<CR>
+nnoremap ,s :FloatermShow<CR>
+nnoremap ,h :FloatermHide<CR>
+nnoremap ,t :FloatermToggle<CR>
+" map ,f :FloatermFirst<CR>
+" map ,l :FloatermLast<CR>
+nnoremap ,n :FloatermNext<CR>
+nnoremap ,p :FloatermPrev<CR>
+nnoremap ,u :FloatermUpdate<CR>
 
 " Fugiteve --------------------------------------
-map <leader>gi :Git init<CR>
-map <leader>gn :Git clone<CR>
-map <leader>gs :Git status<CR>
-map <leader>gw :Gwrite<CR>
-map <leader>gc :Git commit -m ''<left>
-map <leader>gp :Git push<CR>
-map <leader>gl :Git log<CR>
+nnoremap <leader>gi :Git init<CR>
+nnoremap <leader>gn :Git clone<CR>
+nnoremap <leader>gs :Git status<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gc :Git commit -m ''<left>
+nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gl :Git log<CR>
 
 " %{FugitiveStatusline()}
 " rebase -i, diff, log, mergetool, difftool, Gsplit, Gedit, Gedit HEAD~3:%
