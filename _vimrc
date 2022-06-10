@@ -521,6 +521,8 @@ nnoremap <leader>gl :Git log<CR>
 " let g:webevicons_enable_airline_statusline = 1 
 
 
+
+
 "set statusline=%f\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %=%(%l,%c%V\ %Y\ %=\ %P%)
 
 "
