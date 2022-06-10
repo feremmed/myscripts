@@ -96,10 +96,10 @@ E  : Disco E
 F  : Disco F
 G  : Google
 H  : Git Bash
-I  : PildorasInformaticas
+I  : 
 J  : Aprende vim
-K  : Slack
-L  : CClener
+K  : 
+L  : 
 M  : Master(DELL)
 N  : Notepad
 O  : Opera
@@ -112,7 +112,7 @@ U  :
 V  : Vim
 W  : Word
 X  : Excel
-Y  : YouTube
+Y  : 
 Z  : PowerShell
 1  :
 2  :
@@ -276,6 +276,154 @@ Q Ñ
 =========================================================
 AUTOHOTKEY
 =========================================================
+
+#SingleInstance Force
+#NoTrayIcon
+
+F2::Suspend
+
+::lorem:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+#if GetKeyState("Capslock","T")
+2::^+n
+#if GetKeyState("Capslock","T")
+q::esc
+#if GetKeyState("Capslock","T")
+w::^right
+#if GetKeyState("Capslock","T")
+e::Enter
+#if GetKeyState("Capslock","T")
+r::^r
+#if GetKeyState("Capslock","T")
+t::BS
+#if GetKeyState("Capslock","T")
+y::^c
+#if GetKeyState("Capslock","T")
+u::^z
+#if GetKeyState("Capslock","T")
+i::BS
+#if GetKeyState("Capslock","T")
+o::Enter
+#if GetKeyState("Capslock","T")
+p::^v
+#if GetKeyState("Capslock","T")
+a::^n
+#if GetKeyState("Capslock","T")
+s::left
+#if GetKeyState("Capslock","T")
+d::up
+#if GetKeyState("Capslock","T")
+f::down
+#if GetKeyState("Capslock","T")
+g::right
+#if GetKeyState("Capslock","T")
+h::left
+#if GetKeyState("Capslock","T")
+j::down
+#if GetKeyState("Capslock","T")
+k::up
+#if GetKeyState("Capslock","T")
+l::right
+#if GetKeyState("Capslock","T")
+n::^b
+#if GetKeyState("Capslock","T")
+m::+F10
+#if GetKeyState("Capslock","T")
+z::!F4
+#if GetKeyState("Capslock","T")
+x::^x
+#if GetKeyState("Capslock","T")
+c::Delete
+#if GetKeyState("Capslock","T")
+b::^left
+#if GetKeyState("Capslock","T")
+,::Browser_Back
+#if GetKeyState("Capslock","T")
+.::Browser_Forward
+
+#if GetKeyState("k","P")
+m::+F10
+#if GetKeyState("z","P")
+x::!F4
+#if GetKeyState("x","P")
+z::!F4
+#if GetKeyState("x","P")
+c::Volume_Mute
+#if GetKeyState("c","P")
+x::Volume_Down
+#if GetKeyState("c","P")
+z::Volume_Up
+#if GetKeyState("f","P")
+q::esc
+
+#if GetKeyState(",","P")
+m::Volume_Mute
+#if GetKeyState("m","P")
+,::Volume_Down
+#if GetKeyState("m","P")
+.::Volume_Up
+#if getkeystate("Alt","P")
+l::TAB
+#if getkeystate("Alt","P")
+k::+TAB
+#if getkeystate("m","P")
+l::TAB
+#if getkeystate("m","P")
+k::+TAB
+#if getkeystate("0","P")
+9::Capslock
+#if getkeystate("n","P")
+l::Delete
+#if getkeystate("n","P")
+k::Esc
+#if GetKeyState(",","P")
+q::esc
+#if GetKeyState(",","P")
+w::F3
+#if GetKeyState(",","P")
+e::F4
+#if GetKeyState(",","P")
+r::F5
+#if GetKeyState(",","P")
+.::!F4
+#if GetKeyState(".","P")
+,::!F4
+
+#if getkeystate("space","p")
+h::left
+#if GetKeyState("Space","P")
+j::down
+#if GetKeyState("Space","P")
+k::up
+#if GetKeyState("Space","P")
+l::right
+#if GetKeyState("Space","P")
+o::enter
+#if GetKeyState("Space","P")
+i::BS
+#if GetKeyState("Space","P")
+,::Media_Prev
+#if GetKeyState("Space","P")
+.::Media_Next
+#if GetKeyState("Space","P")
+m::Media_Play_Pause
+
+#if GetKeyState("LWin","P")
+f::Up
+#if GetKeyState("LWin","P")
+c::Down
+
+#a::SendInput {á}
+#e::SendInput {é}
+#i::SendInput {í}
+#o::SendInput {ó}
+#u::SendInput {ú}
+#^u::SendInput {ü}
+#n::SendInput {ñ}
+#1::SendInput {¡}
+#/::SendInput {¿}
+#.::SendInput {¿}
 
 <LeftMouse>         Left mouse button press
 <RightMouse>        Right mouse button press

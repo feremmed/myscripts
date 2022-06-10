@@ -117,13 +117,13 @@ Plug 'sheerun/vim-polyglot'                          " Paquete de idiomas con re
 
 Plug 'segeljakt/vim-silicon'  " fotos para códigos
 Plug 'RRethy/vim-illuminate' " resalta palabras iguales a la palabra debajo del cursor como VSC
-" Plug 'Yggdroot/indentLine' " ver indentación como VSC
+Plug 'Yggdroot/indentLine' " ver indentación como VSC
 Plug 'mctechnology17/vim-executor'
 Plug 'puremourning/vimspector', { 'do': './install_gadget.py --all' } " debbuger
 Plug 'mctechnology17/vimtools'
-" Plug 'APZelos/blames.nvim'  " inspirado en complemento Gitlens de VSC
-" Plug 'stsewd/fzf-checkout.vim'   " complemento FZF para GIT }}}
-"
+Plug 'APZelos/blames.nvim'  " inspirado en complemento Gitlens de VSC
+Plug 'stsewd/fzf-checkout.vim'   " complemento FZF para GIT }}}
+
 call plug#end()
 
 "============================================================

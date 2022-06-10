@@ -147,8 +147,6 @@ c::Down
 #.::SendInput {¿}
 
 
-
-
 ; caps_to_esc.ahk
 ; #IfWinActive, ahk_class Vim ; vim window class
 ; Capslock::Esc

@@ -1,5 +1,3 @@
-
-
 =======================================
     2022 JULIO
 
@@ -61,7 +59,7 @@ Fijos
  1270   13      Personal
   280   20      Spotify
  1000   19      Gas
-  607   00      Muni
+  707   30      Muni (Enero22)
 
 Pago deuda
  4000   05      Personal (pagose sola por Error de Sistema)
@@ -87,7 +85,7 @@ Fijos
  1300   18      Personal
   280   20      Spotify
   850   25      Gas
-  607   20      Muni
+  607   19      Muni
  2000   20      Galletas
 
 Pago deuda

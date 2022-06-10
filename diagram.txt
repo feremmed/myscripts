@@ -16,6 +16,7 @@ Gran Feriado largo{
     }
 14 Instala Arnet
 11 Feria del paseo
+
 ================================================
 [ (<- HOY ->) ]
 22 JUNIO 10 Viernes
@@ -35,7 +36,7 @@ Cocina: Pizza
 Progra: winget upgrade --all
 Activi: Mañana guardia pediatrica por Nehuen, no vacunas covid menor 6 años
 Huerta: Cobertura con yuyo seco
-Suceso: 
+Suceso: mi ceso
 Tipeos: 
 Reflex: 
 Pendie: 
