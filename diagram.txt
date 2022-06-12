@@ -18,8 +18,7 @@ Gran Feriado largo{
 11 Feria del paseo
 
 ================================================
-[ (<- HOY ->) ]
-22 JUNIO 10 Viernes
+22 JUNIO 13 Lunes
 Compra: 
 Cocina: 
 Progra: 
@@ -29,6 +28,29 @@ Suceso:
 Tipeos: 
 Reflex: 
 Pendie: 
+================================================
+[ (<- HOY ->) ]
+22 JUNIO 12 Domingo
+Compra: 
+Cocina: 
+Progra: 
+Activi: 
+Huerta: 
+Suceso: 
+Tipeos: mcTechnology17 - Ya me lo bajé y probablemente sea mi depurador de cabecera porque vimspector no funciona en Windows según su documentación, además lo probé para salir de dudas y así fue, no funcionó, pero quizas sea yo que no me dá.
+        Me gustó que nos des un tutorial del plugin y además te lo promociones, eso si es matar dos pajaros de un tiro. Como siempre muchas gracias por tanto.
+Reflex: 
+Pendie: 
+================================================
+22 JUNIO 11 Sábado
+Compra: Pizingallo, galletas, papel hco., etc.
+Cocina: garbanzo y porotos salteadoes
+Progra: casi nada por..
+Activi: cuidar enanos
+================================================
+22 JUNIO 10 Viernes
+Cocina: Polenta
+Progra: executor, vimspector
 ================================================
 22 JUNIO 9 Jueves
 Compra: 295 300gs Queso

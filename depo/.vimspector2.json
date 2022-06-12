@@ -1,0 +1,20 @@
+{
+    "queens.py: Launch": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "queens.py: Launch",
+        "type": "python",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "python": "$HOME/anaconda3/python"
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [
+          "-m"
+        ],
+        "program": "~/myDocs/vimspector"
+      }
+    }
+  }
+}

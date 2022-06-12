@@ -1,60 +1,21 @@
-PI-PY
+# =======================================
+# 09 DICCIONARIOS
 
 
-=======================================
-Anterior
-```Python
-mi_lista = [4, 3, 2, 1]
-mi_lista.sort()
-mi_lista
-[1, 2, 3, 4]
+# midiccionario={"Alemania":"Berlín","Francia":"París", "Reino Unido":"Londres","España":"Madrid"}
+# midiccionario["Italia"]="Lisboa"
+# print(midiccionario)
+# midiccionario["Italia"]="Roma"
+# print(midiccionario)
+# del midiccionario["Reino Unido"]
+# print(midiccionario)
 
-mi_lista2 = [9, 8, 7, 6]
-nueva_lista = sorted()
-nueva_lista = sorted(mi_lista2)
-nueva_lista
-[6, 7, 8, 9]
-mi_lista2
-[9, 8, 7, 6]
+# midiccionario={"Alemania":"Berlín", 23:"Jordan", "Mosqueteros":3}
+# print(midiccionario)
 
-print(mitupla.count(13))
-1
-print(len(mitupla))
-5
-
-nombre, dia, mes, agno=mitupla
-print(nombre)
-print(dia)
-print(agno)
-print(mes)
-Juan
-13
-
-
-1995
-1
-
-len   (longitud de solicitid)
-```
-
-=======================================
-09 DICCIONARIOS
-
-``` python
-midiccionario={"Alemania":"Berlín","Francia":"París", "Reino Unido":"Londres","España":"Madrid"}
-midiccionario["Italia"]="Lisboa"
-print(midiccionario)
-midiccionario["Italia"]="Roma"
-print(midiccionario)
-del midiccionario["Reino Unido"]
-print(midiccionario)
-
-midiccionario={"Alemania":"Berlín", 23:"Jordan", "Mosqueteros":3}
-print(midiccionario)
-
-mitupla=["España", "Francia", "Reino Unido", "Alemania"]
-midiccionario={mitupla[0]:"Madrid", mitupla[1]:"París", mitupla[2]:"Londres", mitupla[3]:"Berlín"}
-print(midiccionario["Francia"])
+# mitupla=["España", "Francia", "Reino Unido", "Alemania"]
+# midiccionario={mitupla[0]:"Madrid", mitupla[1]:"París", mitupla[2]:"Londres", mitupla[3]:"Berlín"}
+# print(midiccionario["Francia"])
 
 midiccionario={23:"Jordan", "Nombre":"Michael", "Equipo":"Chicago", "anillos":{"temporadas":[1991,1992,1993,1996,1997,1998]}
 print(midiccionario["anillos"])
@@ -62,12 +23,11 @@ print(midiccionario.keys())
 print(midiccionario.values())
 print(len(midiccionario))
 print(midiccionario)
-```
 
-=======================================
-10 CONDICIONALES I
+# =======================================
+# 10 CONDICIONALES I
 
-``` python
+
 print("Programa de evaluación de notas de alumnos")
 
 def evaluacion(nota):
@@ -80,11 +40,11 @@ nota_alumno=input("Introduce la nota del alumno: ")
 print(evaluacion(int(nota_alumno)))
 
 print(evaluacion(4))
-```
 
-=======================================
-11 CONDICIONALES II
-```python
+
+# =======================================
+# 11 CONDICIONALES II
+
 print("Verificación de acceso")
 
 edad_usuario=int(input("Introduce tu edad, por favor"))
@@ -119,11 +79,11 @@ elif nota_alumno<9:
 
 else:
     print("Sobresaliente")
-```
 
-=======================================
-12 CONDICIONALES III (Prubeas 09/06/22)
-```python
+
+# =======================================
+# 12 CONDICIONALES III (Prubeas 09/06/22)
+
 edad=7
 
 if edad<100:
@@ -148,8 +108,6 @@ else:
     print("Edad incorrecta")
 
 
-
-
 salario_presidente=int(input("Introduce salario presidente "))
 print("Salario presidente: " + str(salario_presidente))
 
@@ -167,10 +125,10 @@ if salario_administrativo<salario_jefe_area<salario_director<salario_presidente:
 else:
     print("Algo falla en esta empresa")
 
-```
-=======================================
-13 CONDICIONALES IV
-```python
+
+# =======================================
+# 13 CONDICIONALES IV
+
 print("Programa de becas Año 2017")
 distancia_escuela=int(input("Introduce la distancia a la escuela en km "))
 
@@ -205,10 +163,10 @@ else:
 
     print("La asignatura escogida no está contemplada")
 
-```
-=======================================
-14 BUCLES I
-```python
+
+# =======================================
+# 14 BUCLES I
+
 for i in [1,2,3]:
     print("Hola")
 
@@ -251,10 +209,9 @@ else:
     print("El email no es correcto")
 
 
-```
-=======================================
-15 BUCLES II
-```python
+# =======================================
+# 16 BUCLES V
+
 for i in range(5):
     print(i)
 
@@ -284,11 +241,9 @@ else:
     print("Email incorrecto")
 
 
+# =======================================
+# 17 BUCLES IV
 
-```
-=======================================
-17 BUCLES IV
-```python
 i=1
 
 while i<=10:
@@ -340,10 +295,10 @@ if intentos<2:
     solucion=math.sqrt(numero)
     print ("La raíz cuadrada de " + str(numero) + " es " + str(solucion))
 
-```
-=======================================
-18 BUCLES V
-```python
+
+# =======================================
+# 18 BUCLES V
+
 for letra in "Python":
 
     if letra=="h":
@@ -383,10 +338,10 @@ arroba=False
 
 print(arroba)
 
-```
-=======================================
-19 GENERADORES I
-```python
+
+# =======================================
+# 19 GENERADORES I
+
 def generaPares(limite):
 
     num=1
@@ -431,11 +386,9 @@ print("Aquí podría ir más código...")
 print(next(devuelvePares))
 
 
+# =======================================
+# 20 GENERADORES II
 
-```
-=======================================
-20 GENERADORES II
-```python
 def devuelve_ciudades(*ciudades):
     for elemento in ciudades:
         #for subElemento in elemento:
@@ -447,10 +400,10 @@ print(next(ciudades_devueltas))
 
 print(next(ciudades_devueltas))
 
-```
-=======================================
-21 EXCEPCIONES I
-```python
+
+# =======================================
+# 21 EXCEPCIONES I
+
 def suma(num1, num2):
     return num1+num2
 
@@ -475,7 +428,7 @@ op1=(int(input("Introduce el primer número: ")))
 
 op2=(int(input("Introduce el segundo número: ")))
 
-operacion=input("Introduce la operación a realizar (suma,resta,multiplica,divide): ") 
+operacion=input("Introduce la operación a realizar (suma,resta,multiplica,divide): ")
 
 if operacion=="suma":
     print(suma(op1,op2))
@@ -494,10 +447,10 @@ else:
 
 print("Operación ejecutada. Continuación de ejecución del programa ")
 
-```
-=======================================
-22 EXCEPCIONES II
-```python
+
+# =======================================
+# 22 EXCEPCIONES II
+
 def suma(num1, num2):
     return num1+num2
 
@@ -537,7 +490,7 @@ op1=(int(input("Introduce el primer número: ")))
 
 op2=(int(input("Introduce el segundo número: ")))
 
-operacion=input("Introduce la operación a realizar (suma,resta,multiplica,divide): ") 
+operacion=input("Introduce la operación a realizar (suma,resta,multiplica,divide): ")
 
 f operacion=="suma":
     print(suma(op1,op2))
@@ -555,32 +508,3 @@ else:
     print ("Operación no contemplada")
 
 print("Operación ejecutada. Continuación de ejecución del programa ")
-```
-=======================================
-n
-```python
-c
-```
-=======================================
-n
-```python
-c
-```
-=======================================
-n
-```python
-c
-```
-=======================================
-n
-```python
-c
-```
-=======================================
-n
-```python
-c
-```
-=======================================
-
-
