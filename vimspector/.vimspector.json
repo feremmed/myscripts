@@ -1,0 +1,30 @@
+{
+  "configurations": {
+    "queens.py: Launch": {
+      "adapter": "debugpy",
+      "configuration": {
+        "name": "python:Launch",
+        "type": "python",
+        "request": "launch",
+        "cwd":"${workspaceRoot}",
+        "python"$HOME/AppData/Local/Programs/Python/Python310/python
+        "debugOptions": [
+          "-m"
+        ],
+        "program": "${workspaceRoot}/queens.py",
+        "args": [
+          "*${ProgamArgs}"
+        ]
+      },
+      "Python - Launch": {
+        "adapter": "vscode-python"
+        "configuration": {
+          "name": "Python: Launch current file",
+          "type": "python",
+          "stopOnEntry": "true",
+          "stopOnEntry": "true",
+        }
+      }
+    }
+  }
+}
