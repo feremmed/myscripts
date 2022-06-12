@@ -1,4 +1,4 @@
-{
+
     "queens.py: Launch": {
       "adapter": "debugpy",
       "filetypes": [ "python" ],
