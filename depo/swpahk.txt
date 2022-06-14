@@ -1,4 +1,41 @@
-z
+
+" Con pairs de apertura envuelve PALABRAS
+" ysiw(  ( espaciado )
+" ysiw[{'" [ etc ]
+
+" Con pairs de cierre envuelve PALABRAS
+" ysiw(  (ajustado)
+" ysiw]}>'" [etc]
+
+" Con pairs de apertura envuelve LÍNEAS 
+" yss(  ( espaciado entre pairs )
+" yss[{'" [ etc ]
+
+" Con pairs de cierre envuelve LÍNEAS 
+" yss(  (ajustado entre pairs)
+" yss]}>'" [etc]
+
+
+" Con  cs")  cambia comillas por paréntesis
+"coso coso"   >   (coso coso)
+
+" Con ysiw<em>
+
+" <em>Hello</em> world!
+
+" 
+En Modo Visual Line
+
+S<p class="important">.
+
+<p class="important">
+  <em>Hello</em> world!
+</p>
+
+
+
+
+
 
 #SingleInstance Force
 #NoTrayIcon

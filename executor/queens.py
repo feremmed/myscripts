@@ -1,6 +1,4 @@
 
-
-
 # from https://www.sanfoundry.com/python-program-solve-n-queen-problem-without-recursion/
 
 class QueenChessBoard:

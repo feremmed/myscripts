@@ -17,12 +17,12 @@
 # midiccionario={mitupla[0]:"Madrid", mitupla[1]:"París", mitupla[2]:"Londres", mitupla[3]:"Berlín"}
 # print(midiccionario["Francia"])
 
-midiccionario={23:"Jordan", "Nombre":"Michael", "Equipo":"Chicago", "anillos":{"temporadas":[1991,1992,1993,1996,1997,1998]}
-print(midiccionario["anillos"])
-print(midiccionario.keys())
-print(midiccionario.values())
-print(len(midiccionario))
-print(midiccionario)
+# midiccionario={23:"Jordan", "Nombre":"Michael", "Equipo":"Chicago", "anillos":{"temporadas":[1991,1992,1993,1996,1997,1998]}
+# print(midiccionario["anillos"])
+# print(midiccionario.keys())
+# print(midiccionario.values())
+# print(len(midiccionario))
+# print(midiccionario)
 
 # =======================================
 # 10 CONDICIONALES I
