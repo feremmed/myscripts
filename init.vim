@@ -1,5 +1,5 @@
 
-"NEO VIM
+"NEO VIM (copia)
 
 syntax enable
 set clipboard=unnamed          " Use clipboard of OS in Vim
