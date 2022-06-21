@@ -82,7 +82,7 @@ else:
 
 
 # =======================================
-# 12 CONDICIONALES III (Prubeas 09/06/22)
+ 12 CONDICIONALES III (Prubeas 09/06/22)
 
 edad=7
 
@@ -131,11 +131,14 @@ else:
 
 print("Programa de becas Año 2017")
 distancia_escuela=int(input("Introduce la distancia a la escuela en km "))
+print(distancia_escuela)
 
 numero_hermanos=int(input("Introduce el n° de hermanos en el centro "))
 print(numero_hermanos)
 
 salario_familiar=int(input("Introduce salario anual bruto "))
+print(salario_familiar)
+
 
 if distancia_escuela>40 and numero_hermanos>2 and salario_familiar<=20000:
 # if distancia_escuela>40 and numero_hermanos>2 or salario_familiar<=20000:
@@ -148,14 +151,28 @@ else:
 
 
 
+
 print("Asignaturasoptativas Año 2017")
 print("Asignaturas optativos: Informática gráfica - Prubeas de software - Usabilidad y accesibilidad")
 asignatura=input("Escribe la asignatura escogida: ")
-# opcion=input("Escribe la asignatura escogida: ")
 
-# asignatura=opcion.lower()
+if asignatura in ("Informática gráfica", "Pruebas de software", "Usabilidad y accesibilidad"):
 
-if asignatura in ("Informática gráfica", "Prubas de software", "Usabilidad y accesibilidad")
+    print("Asignatura elegida " + asignatura)
+
+else:
+
+    print("La asignatura escogida no está contemplada")
+
+
+
+print("Asignaturasoptativas Año 2017")
+print("Asignaturas optativos: informática gráfica - prubeas de software - usabilidad y accesibilidad")
+opcion=input("Escribe la asignatura escogida: ")
+
+asignatura=opcion.lower()
+
+if asignatura in ("informática gráfica", "pruebas de software", "usabilidad y accesibilidad")
 
     print("Asignatura elegida " + asignatura)
 
@@ -179,6 +196,8 @@ for i in ["Pildoras", "Informáticas", 3]:
     print("Hola", end=" ")
 
 
+# =======================================
+# 15 BUCLES II
 
 email=False
 
@@ -192,6 +211,8 @@ if email==True:
     print("Email es correcto")
 else:
     print("El email no es correcto")
+
+
 
 
 contador=0
@@ -210,7 +231,7 @@ else:
 
 
 # =======================================
-# 16 BUCLES V
+# 16 BUCLES III
 
 for i in range(5):
     print(i)
@@ -244,6 +265,7 @@ else:
 # =======================================
 # 17 BUCLES IV
 
+# No acabará porqué no asignarle un fin, en este caso in i=i+1
 i=1
 
 while i<=10:
@@ -252,6 +274,7 @@ while i<=10:
 print("Terminó la ejecución")
 
 
+# En cambio este si lo hará
 i=1
 
 while i<=10:
@@ -260,6 +283,7 @@ while i<=10:
 
 print("Terminó la ejecución")
 
+# coso
 
 edad=int(input("Introduce tu edad por favor: "))
 
@@ -322,6 +346,7 @@ print(contador)
 # print (len(nombre))
 
 
+
 email=input("Introduce tu email, por favor: ")
 
 for i in email:
@@ -334,7 +359,7 @@ for i in email:
 
 else:
 
-arroba=False
+    arroba=False
 
 print(arroba)
 
@@ -357,6 +382,8 @@ def generaPares(limite):
     return miLista
 
 print(generaPares(10))
+
+
 
 
 def generarPares(limite):
@@ -394,7 +421,8 @@ def devuelve_ciudades(*ciudades):
         #for subElemento in elemento:
             yield elemento
 
-ciudades_devueltas=devuelve_ciudades("Madrid, Barcelona, Bilbao, Valencia")
+
+ciudades_devueltas=devuelve_ciudades("Madrid", "Barcelona", "Bilbao", "Valencia")
 
 print(next(ciudades_devueltas))
 
@@ -403,6 +431,7 @@ print(next(ciudades_devueltas))
 
 # =======================================
 # 21 EXCEPCIONES I
+
 
 def suma(num1, num2):
     return num1+num2
@@ -419,7 +448,57 @@ def divide(num1, num2):
     try:
         return num1/num2
 
-    except ZeroDivisionError:
+    except
+
+    ZeroDivisionError:
+        print("No se puede dividir entre 0")
+        return "Operación erronea"
+
+
+op1=(int(input("Introduce el primer número: ")))
+
+op2=(int(input("Introduce el segundo número: ")))
+
+operacion=input("Introduce la operación a realizar (suma,resta,multiplica,divide): ")
+
+if operacion=="suma":
+    print(suma(op1,op2))
+
+elif operacion=="resta":
+    print(resta(op1,op2))
+
+elif operacion=="multiplica":
+    print(multiplica(op1,op2))
+
+elif operacion=="divide":
+    print(divide(op1,op2))
+
+else:
+    print ("Operación no contemplada")
+
+print("Operación ejecutada. Continuación de ejecución del programa ")
+
+
+
+
+def suma(num1, num2):
+    return num1+num2
+
+def resta(num1, num2):
+    return mum1-num2
+
+def multiplica(num1, num2):
+    return mum1*num2
+
+def divide(num1, num2):
+    return mum1/num2
+
+    try:
+        return num1/num2
+
+    except
+
+    ZeroDivisionError:
         print("No se puede dividir entre 0")
         return "Operación erronea"
 

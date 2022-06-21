@@ -20,24 +20,23 @@ Debe
 
 Haber
  3300   Cem
-  635   Personal
 
 =======================================
     2022 JUNIO
 
 IBU
-22000   00
+27500   14
 
 Fijos
- 2888   00      Edesa
- 2800   00      Cem
- 1111   00      Personal
+ 2888   14      Edesra
+ 2800   14      Cem
+  600   14      Personal
   280   00      Spotify
- 1111   00      Gas
-  666   00      Muni
+ 1000   13      Gas (Clau)
+ 2000   14      Devuelto Clau
 
 Debe
- 8334   Muni
+ 7500   Muni
  1000   Abogado
 
 Haber

@@ -14,11 +14,9 @@ Gran Feriado largo{
     19 Día del Padre - Tercer Domingo de Junio
     17 Día de Güemes
     }
-14 Instala Arnet
-11 Feria del paseo
 
 ================================================
-22 JUNIO 13 Lunes
+22 JUNIO 17 Viernes
 Compra: 
 Cocina: 
 Progra: 
@@ -30,21 +28,49 @@ Reflex:
 Pendie: 
 ================================================
 [ (<- HOY ->) ]
-22 JUNIO 12 Domingo
+22 JUNIO 16 Jueves
 Compra: 
 Cocina: 
 Progra: 
 Activi: 
 Huerta: 
 Suceso: 
-Tipeos: mcTechnology17 - Ya me lo bajé y probablemente sea mi depurador de cabecera porque vimspector no funciona en Windows según su documentación, además lo probé para salir de dudas y así fue, no funcionó, pero quizas sea yo que no me dá.
-        Me gustó que nos des un tutorial del plugin y además te lo promociones, eso si es matar dos pajaros de un tiro. Como siempre muchas gracias por tanto.
+Tipeos: 
 Reflex: 
 Pendie: 
+================================================
+22 JUNIO 15 Miercoles
+Compra: Comida michis, piedritas, baño y pala. Cueritos, cañito, azucar.
+Cocina: Hamburgesa de pollo con arroz
+Progra: Vim test
+Activi: 
+Huerta: 
+Suceso: 
+Tipeos: 
+Reflex: 
+Pendie: 
+================================================
+22 JUNIO 14 Martes
+Compra: Pago servicios y gran compra Día y verdulería.
+Cocina: Hamubrgesa de pollo napo con ensalada de garbanzos
+Progra: Vim test 
+Suceso: Cobro IBU, Otro día sin instalación Arnet
+================================================
+22 JUNIO 13 Lunes
+Compra: 
+Cocina: Guiso moño Mami
+Progra: Consolido Executor, install vimsession
+================================================
+22 JUNIO 12 Domingo
+Cocina:
+Progra:  
+Tipeos: mcTechnology17 - Ya me lo bajé y probablemente sea mi depurador de cabecera porque vimspector no funciona en Windows según su documentación, además lo probé para salir de dudas y así fue, no funcionó, pero quizas sea yo que no me dá.
+        Me gustó que nos des un tutorial del plugin y además te lo promociones, eso si es matar dos pajaros de un tiro. Como siempre muchas gracias por tanto.
 ================================================
 22 JUNIO 11 Sábado
 Compra: Pizingallo, galletas, papel hco., etc.
 Cocina: garbanzo y porotos salteadoes
+Suceso: Feria del paseo
 Progra: casi nada por..
 Activi: cuidar enanos
 ================================================
@@ -318,28 +344,6 @@ set list
 
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
-
-<LeftMouse>     - Left mouse button press
-<RightMouse>    - Right mouse button press
-<MiddleMouse>   - Middle mouse button press
-<LeftRelease>   - Left mouse button release
-<RightRelease>  - Right mouse button release
-<MiddleRelease> - Middle mouse button release
-<LeftDrag>      - Mouse drag while Left mouse button is pressed
-<RightDrag>     - Mouse drag while Right mouse button is pressed
-<MiddleDrag>    - Mouse drag while Middle mouse button is pressed
-<2-LeftMouse>   - Left mouse button double-click
-<2-RightMouse>  - Right mouse button double-click
-<3-LeftMouse>   - Left mouse button triple-click
-<3-RightMouse>  - Right mouse button triple-click
-<4-LeftMouse>   - Left mouse button quadruple-click
-<4-RightMouse>  - Right mouse button quadruple-click
-<X1Mouse>       - X1 button press
-<X2Mouse>       - X2 button press
-<X1Release>     - X1 button release
-<X2Release>     - X2 button release
-<X1Drag>        - Mouse drag while X1 button is pressed
-<X2Drag>        - Mouse drag while X2 button is pressed
 
 math.prep.soyhenry.com
 data.prep.soyhenry.com

@@ -101,11 +101,9 @@ k::Esc
 #if GetKeyState(",","P")
 q::esc
 #if GetKeyState(",","P")
-w::F3
+z::F3
 #if GetKeyState(",","P")
-e::F4
-#if GetKeyState(",","P")
-r::F5
+x::F4
 #if GetKeyState(",","P")
 .::!F4
 #if GetKeyState(".","P")

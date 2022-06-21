@@ -1,0 +1,64 @@
+snippet . "self" b
+self.$0
+endsnippet
+
+snippets defc "method" b
+def $1(self$2):
+    ${3:pass}
+$0
+endsnippet
+
+snippet def "method" b
+def $1():
+    ${2:pass}
+$0
+endsnippet
+
+snippet defs "static method" b
+@staticmethod
+def $1(${2:arg1})
+    ${3:pass}
+$0
+endsnippet
+
+snippet prop "property" b
+@property
+def $(self):
+    return ${3:attribute}
+$0
+endsnippet
+
+snippet action "action" b
+class ${1:Action}:
+
+    def __init__(self, ${2:collaborator}):
+        self._$2 = $2
+
+    def do(self):
+        ${3:pass}
+$0
+endsnippet
+
+
+snippet testc "test case" b
+from django.test import TestCase
+from expects import (
+    equal
+    expect
+)
+
+
+class ${1:TestCase}TestCase(TestCase):
+$0
+endsnippet
+
+snippet deft "test method" b
+def test_it_$1(self):
+    ${2:action}
+    expect().to()
+$0
+endsnippet
+
+snippet ipdb "ipdb" b
+import ipdb; ipdb.set_trace()$0
+endsnippet

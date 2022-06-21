@@ -1,5 +1,6 @@
+= = = = = = { C O P I A }  = = = = = =
 
-"NEO VIM (copia)
+"NEO VIM
 
 syntax enable
 set clipboard=unnamed          " Use clipboard of OS in Vim
@@ -100,13 +101,15 @@ Plug 'voldikss/vim-translator'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'                          " Paquete de idiomas con resaltado
 
-" Plug 'segeljakt/vim-silicon'  " fotos para códigos
-" Plug 'Yggdroot/indentLine' " ver indentación como VSC
+Plug 'vim-test/vim-test', { 'for': ['python'] }
+Plug 'tpope/vim-dispatch'                            " asynchronus
 Plug 'mctechnology17/vim-executor'
 " Plug 'mctechnology17/vimtools'
 " Plug 'APZelos/blames.nvim'  " inspirado en complemento Gitlens de VSC
 " Plug 'stsewd/fzf-checkout.vim'   " complemento FZF para GIT }}}
-"
+
+"Plug 'SirVer/ultisnips'
+" Plug 'majustushi/tagbar'
 
 call plug#end()
 
@@ -160,35 +163,39 @@ nnoremap vf v$
 nnoremap vc v0
 nnoremap U <C-r>
 nnoremap cc cc<esc>
-nnoremap <F5> :term<CR>
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
-nnoremap <leader>= <C-w>=
-nnoremap <leader>x <C-w>x
-nnoremap <leader>W :browse confirm saveas<CR>
-nnoremap <leader>A :browse vsp<CR>
-nnoremap <leader>D :browse sp<CR>
-nnoremap <leader>n :enew<CR>
-nnoremap <leader>2 :tabnew<CR>
-nnoremap <C-l> :tabnext<CR>
-nnoremap <C-h> :tabprev<CR>
-nnoremap <leader>a :vsp<CR>
+
+nnoremap <leader>se <C-w>=
+nnoremap <leader>sx <C-w>x
+nnoremap <leader>sw :set nowrap!<CR>
+nnoremap <leader>sr :set nu! rnu!<CR>
+nnoremap <leader>sc :s ww=<,>,h,l<CR>
+nnoremap <leader>ss :source ~\AppData\Local\nvim\init.vim<CR>
+
+" nnoremap <leader>nl :tabn<CR>
+" nnoremap <leader>nh :tabp<CR>
+nnoremap <leader>nt :tabnew<CR>
+nnoremap <leader>ns :browse confirm saveas<CR>
+nnoremap <leader>nv :vsp<CR>
+nnoremap <leader>nh :sp<CR>
+nnoremap <leader>nb :enew<CR>
+
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q!<CR>
-nnoremap <leader>z :qa!<CR>
-nnoremap <leader>b :bdelete!<CR>
-nnoremap <leader>r :set nowrap!<CR>
-nnoremap <leader>u :set nu! rnu!<CR>
-nnoremap <leader>s :source $HOME\AppData\Local\nvim\init.vim<CR>
-nnoremap <leader>0 :set ww=<,>,h,l<CR>
+nnoremap <leader>ds :qa!<CR>
+nnoremap <leader>dd :bdelete!<CR>
+nnoremap <leader>dc :lclose<bar>b#<bar>bd #<CR>
 
 " D I R E C T    A C C S E S S
-nnoremap <leader>E :e E:/eproj
-nnoremap <leader>F :e F:/
-nnoremap <leader>C :e C:/
-nnoremap <leader>G :e G:/
-nnoremap <leader>v :e ~/AppData/Local/nvim/init.vim<CR>
-nnoremap <leader>d :e ~/myDocs<CR>
+nnoremap <leader>ae :e E:/eproj
+nnoremap <leader>af :e F:/
+nnoremap <leader>ag :e G:/
+nnoremap <leader>ac :e C:/
+nnoremap <leader>am :e C:/Users/DELL<CR>
+nnoremap <leader>av :e ~/AppData/Local/nvim/init.vim<CR>
+nnoremap <leader>an :e ~/AppData/Local/nvim<CR>
+nnoremap <leader>ad :e ~/myDocs<CR>
 
 " <leader> iox13456879 ||  + !%*QRTYUIOPSGZXCVBNM
 
@@ -222,13 +229,14 @@ inoremap ,k <esc>ki
 inoremap ,z <esc>zzi
 inoremap ,v <esc>viwyi
 noremap ,v viwy
-inoremap ,b <esc>ciw
-noremap ,b diw
+inoremap ,d <esc>ciw
+noremap ,d diw
 inoremap ,m <esc>mi
 inoremap ,c <Esc>0i
 noremap ,c 0
 inoremap ,f <Esc>$a
 noremap ,f $
+nnoremap ,x <C-w>=
 " noremap ,xj d15j<esc>
 " inoremap ,xj <esc>d15ji
 " noremap ,xk d15k<esc>
@@ -238,7 +246,7 @@ inoremap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>10ki
 " WsSrgGxqyYwetiodpVAHJKLnNVBM
 " 4567890-=yuioadgklx
 
-" VANILA VIM
+" VANILA NVIM
 
 " Cursor line and column
 augroup cline
@@ -255,7 +263,7 @@ augroup END
 
 " mark ending line
 set list
-set lcs=tab:··
+set lcs=tab:‧‧
 set lcs+=trail:~
 set lcs=eol:¬
 
@@ -279,8 +287,6 @@ nnoremap - :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 nnoremap + :exe " resize " . (winheight(0) * 3/2)<CR>
 nnoremap _ :exe " resize " . (winheight(0) * 2/3)<CR>
 
-" To close buffer without closing splits
-nnoremap <leader>B :lclose<bar>b#<bar>bd #<CR>
 
 "  empty spaces at  the of lineas on save of python files
 autocmd BufWritePre *.py :%s/\s\+$//e
@@ -302,8 +308,8 @@ noremap <leader><TAB> <C-w><C-w>
 set guifont=mononoki\ Nerd\ Font\ Mono:h10
 " set guifont=mononoki\ NF:h10
 " set guifont=MesloLGM\ Nerd\ Font\ Mono:h9
-nnoremap <leader># :set guifont<CR>
-nnoremap <leader>$ :set guifont=*<CR>
+nnoremap <leader>gd :set guifont<CR>
+nnoremap <leader>gg :set guifont=*<CR>
 
 highlight Comment gui=italic
 
@@ -317,6 +323,7 @@ noremap <C-ScrollWheelUp> :call AdjustFontSize(1)<CR>
 noremap <C-ScrollWheelDown> :call AdjustFontSize(-1)<CR>
 inoremap <C-ScrollWheelUp> <Esc>:call AdjustFontSize(1)<CR>a
 inoremap <C-ScrollWheelDown> <Esc>:call AdjustFontSize(-1)<CR>a
+
 
 "============================================================
 " P L U G    C O N F I G U R A T I O N
@@ -371,9 +378,9 @@ let g:airline_powerline_fonts = 1
 let g:airline_extensions = []
 
 " NERDTree --------------------------------
-nnoremap <leader>tt :NERDTreeToggle<CR>
-nnoremap <leader>tf :NERDTreeFind<CR>
-nnoremap <leader>tF :NERDTreeFocus<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+nnoremap <leader>nm :NERDTreeFocus<CR>
 
 let g:NERDTreeHighlightCursorline = 1
 
@@ -386,7 +393,7 @@ let g:NERDTreeSyntaxEnabledExactMatches = ['node_modules', 'favicon.ico'] " enab
 let g:webdevicons_conceal_nerdtree_brackets = 1
 
 " EasyMotion --------------------------------
-nnoremap <leader>e <Plug>(easymotion-s2)
+nnoremap <leader>ee <Plug>(easymotion-s2)
 
 " EasyAlign Config  --------------------------------
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -401,10 +408,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-
-" Vim tests -------------------------------
-" run tests ina vim8 terminal
-let g:test#strategy = "vimterminal"
 
 " Fuzzy finder -----------------------------
 nnoremap <leader>fe :Files E:/eproj/<CR>
@@ -474,15 +477,16 @@ let g:floaterm_autoclose = 0
 let g:floaterm_winblend = 9
 let g:floaterm_title = 'floaterm($1|$2)'
 
-nnoremap ,1 :FloatermNew --width=55 --wintype=vsplit --name=f1 --position=rightbelow python<CR>
-nnoremap ,2 :FloatermNew --height=18 --wintype=split --name=f2 --position=below python<CR>
-nnoremap ,3 :FloatermNew --width=55 --wintype=vsplit --name=f3 --position=rightbelow<CR>
-nnoremap ,4 :FloatermNew --height=18 --wintype=split --name=f4 --position=below<CR>
-xnoremap <leader>f :FloatermSend<CR>
-nnoremap ,tk :FloatermKill<CR>
-nnoremap ,tt :FloatermToggle<CR>
-nnoremap ,ts :FloatermShow<CR>
-nnoremap ,th :FloatermHide<CR>
+nnoremap <leader>vl :FloatermNew --width=55 --wintype=vsplit --name=f1 --position=rightbelow python<CR>
+nnoremap <leader>vv :FloatermNew --height=18 --wintype=split --name=f2 --position=below python<CR>
+nnoremap <leader>vn :FloatermNew --width=55 --wintype=vsplit --name=f3 --position=rightbelow<CR>
+nnoremap <leader>vm :FloatermNew --height=18 --wintype=split --name=f4 --position=below<CR>
+xnoremap <leader>v :FloatermSend<CR>
+nnoremap <leader>vk :FloatermKill<CR>
+nnoremap <leader>vt :FloatermToggle<CR>
+nnoremap <leader>vs :FloatermShow<CR>
+nnoremap <leader>vh :FloatermHide<CR>
+nnoremap <leader>vc :term<CR>
 
 " Fugiteve --------------------------------------
 nnoremap <leader>gi :Git init<CR>
@@ -493,9 +497,10 @@ nnoremap <leader>gc :Git commit -m ''<left>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gl :Git log<CR>
 
+" :Gread deshace cambios a último commit   :Gdiff visual de diferencias
+
 " Executor --------------------------------------
-" 56yasdghklx
-let g:executor_compiler_run_code = 0
+let g:executor_compiler_run_code = 1
 " 1 = <S-ARROWS> 2 = <LEADER><ARROWS> 3 = <C-HJKL>
 let g:executor_jump =
       \ get(g:, 'executor_jump', 3)
@@ -513,17 +518,22 @@ let g:executor_file_mapping =
       \ get(g:, 'executor_file_mapping', 1)
 " 0 = deactivate 1 = <ESC> 2 = <ESC><ESC>
 let g:executor_esc = 2
-nnoremap ,em :ExecutorMenu<CR>
-nnoremap ,er :ExecutorRun<CR>
-nnoremap ,ed :ExecutorDebugger<CR>
-nnoremap ,z :ExecutorZoom<CR>
+nnoremap <leader>em :ExecutorMenu<CR>
+nnoremap <leader>er :ExecutorRun<CR>
+nnoremap <leader>ed :ExecutorDebugger<CR>
+nnoremap <leader>es :ExecutorZoom<CR>
 
 let g:executor_compiler_flags_python =
       \ get(g:, 'executor_compiler_flags_python', '')
 
+let g:executor_debugger_flags_python =
+      \ get(g:, 'executor_debugger_flags_python', '-m')
 
+let g:executor_program_args_python =
+      \ get(g:, 'executor_program_args_python', '')
 
 " VimSession --------------------------------------
+
 let g:session_default_name = 'pyrula'
 let g:session_default_overwrite = 1
 let g:session_autosave = 'yes'
@@ -540,15 +550,53 @@ call add(g:session_persist_globals, 'g:session_autoload')
 call add(g:session_persist_globals, 'g:session_autosave')
 call add(g:session_persist_globals, 'g:session_default_to_last')
 call add(g:session_persist_globals, 'g:session_persist_globals')
+
+" Vim test -------------------------------
+let test#strategy = "neovim"
+" neovim, dispatch, basic, floaterm
+
+nmap <silent> <leader>rn :TestNearest<CR>
+nmap <silent> <leader>rf :TestFile<CR>
+nmap <silent> <leader>rs :TestSuite<CR>
+nmap <silent> <leader>rl :TestLast<CR>
+nmap <silent> <leader>rv :TestVisit<CR>
+
+let g:test#neovim#start_normal = 1 " If using neovim strategy
+" let g:test#basic#start_normal = 1 " If using basic strategy
+
+let test#python#runner = 'pytest'
+
+let g:test#echo_command = 0
+
+" ESPECIFICO PARA CADA FUNCION
+" let test#strategy = {
+"   \ 'nearest': 'neovim',
+"   \ 'file':    'dispatch',
+"   \ 'suite':   'basic',
+" \}
+
+" :TestFile -strategy=neovim
+
 "============================================================
+
 "Exclusivas de NEOVIM
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
 " if has("patch-8.1.1564")
 "   " Recently vim can merge signcolumn and number column into one
-"   set signcolumn=number
+
+" set signcolumn=number
 " else
 "   set signcolumn=yes
 " endif
 
 " Actualizar copia de vim syntax enable, set nocompatible, undodir, call plug, source, leader v, exclusivas  
+
+
+" Show spaces  ≦
+" hi Conceal guibg=NONE ctermbg=NONE ctermfg=DarkGray
+" autocmd BufRead * setlocal conceallevel=2 concealcursor=nv
+" autocmd BufRead * syn match LeadingSpace /\(^ *\)\@≤  /  containedin=ALL conceal cchar=·
+
+
+
