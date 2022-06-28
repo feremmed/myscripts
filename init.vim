@@ -116,20 +116,23 @@ call plug#end()
 "============================================================
 
 " M O V E M E N T
+xnoremap S zs
+noremap S zs
+noremap M zt
 noremap J 18j
 noremap K 18k
 noremap H 34h
 noremap L 34l
-noremap M zt
-noremap S zs
-xnoremap S zs
-" zz33j33k
-nnoremap <Up> gk
-nnoremap <Down> gj
+inoremap JJ <Esc>18j
+inoremap KK <Esc>18k
+inoremap HH <Esc>34h
 inoremap jj <Esc>j
 inoremap kk <Esc>k
 inoremap hh <Esc>h
-inoremap lll <Esc>l
+
+" nnoremap <Up> gk
+" nnoremap <Down> gj
+
 xnoremap <C-j> :move '>+1<CR>gv-gv
 xnoremap <C-k> :move '<-2<CR>gv-gv
 " nnoremap <C-j> :m .+1<CR>==
@@ -171,10 +174,8 @@ nnoremap <leader>sx <C-w>x
 nnoremap <leader>sw :set nowrap!<CR>
 nnoremap <leader>sr :set nu! rnu!<CR>
 nnoremap <leader>sc :s ww=<,>,h,l<CR>
-nnoremap <leader>ss :source ~\AppData\Local\nvim\init.vim<CR>
+nnoremap <leader>s :source ~\AppData\Local\nvim\init.vim<CR>
 
-" nnoremap <leader>nl :tabn<CR>
-" nnoremap <leader>nh :tabp<CR>
 nnoremap <leader>nt :tabnew<CR>
 nnoremap <leader>ns :browse confirm saveas<CR>
 nnoremap <leader>nv :vsp<CR>
@@ -209,6 +210,14 @@ inoremap <C-e> <Esc>ggVG
 noremap <CR> i<CR><esc>
 noremap <BS> X
 inoremap xx <Delete>
+inoremap >> <  ><left><left>
+inoremap )) (  )<left><left>
+inoremap ]] [  ]<left><left>
+inoremap }} {  }<left><left>
+inoremap ''' '  '<left><left>
+inoremap """ "  "<left><left>
+inoremap !!! ¡  !<left><left>
+inoremap ??? ¿  ?<left><left>
 inoremap << <><left>
 inoremap (( ()<left>
 inoremap [[ []<left>
@@ -226,17 +235,20 @@ inoremap ,a <esc>la
 inoremap ,h <esc>ha
 inoremap ,j <esc>ji
 inoremap ,k <esc>ki
-inoremap ,z <esc>zzi
-inoremap ,v <esc>viwyi
-noremap ,v viwy
+inoremap ,y <esc>viwyi
+noremap ,y viwy
 inoremap ,d <esc>ciw
 noremap ,d diw
 inoremap ,m <esc>mi
-inoremap ,c <Esc>0i
-noremap ,c 0
 inoremap ,f <Esc>$a
 noremap ,f $
-nnoremap ,x <C-w>=
+inoremap ,c <Esc>0i
+noremap ,c 0
+inoremap ,v <esc>_i
+nnoremap ,v _
+inoremap ,w <Esc>wa
+inoremap ,e <Esc>ea
+inoremap ,b <Esc>bi
 " noremap ,xj d15j<esc>
 " inoremap ,xj <esc>d15ji
 " noremap ,xk d15k<esc>
@@ -284,8 +296,8 @@ augroup END
 nnoremap = :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 nnoremap - :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 
-nnoremap + :exe " resize " . (winheight(0) * 3/2)<CR>
-nnoremap _ :exe " resize " . (winheight(0) * 2/3)<CR>
+nnoremap ) :exe " resize " . (winheight(0) * 3/2)<CR>
+nnoremap ( :exe " resize " . (winheight(0) * 2/3)<CR>
 
 
 "  empty spaces at  the of lineas on save of python files
@@ -329,7 +341,6 @@ inoremap <C-ScrollWheelDown> <Esc>:call AdjustFontSize(-1)<CR>a
 " P L U G    C O N F I G U R A T I O N
 
 " Surround --------------------------------
-
 " pairs apertura envuelve PALABRAS
 " ysiw(  ( espaciado )
 " pairs cierre envuelve PALABRAS
@@ -440,8 +451,8 @@ nnoremap <Leader>pd :Ack! --py  C:/Users/DELL/myDocs/<left><left><left><left><le
 
 " Tmux --------------------------------------
 let g:tmux_navigator_no_mappings = 1
-"nnoremap <up> :TmuxNavigateUp<CR>
-"nnoremap <down> :TmuxNavigateDown<CR>
+nnoremap <up> :TmuxNavigateUp<CR>
+nnoremap <down> :TmuxNavigateDown<CR>
 nnoremap <left> :TmuxNavigateLeft<CR>
 nnoremap <right> :TmuxNavigateRight<CR>
 
@@ -544,12 +555,13 @@ let g:session_default_to_last = 1
 let g:session_menu = 0
 
 " Persist the options of the session plug-in using the session plug-in...
-let g:session_persist_globals = ['&sessionoptions']
-call add(g:session_persist_globals, 'g:session_default_overwrite')
-call add(g:session_persist_globals, 'g:session_autoload')
-call add(g:session_persist_globals, 'g:session_autosave')
-call add(g:session_persist_globals, 'g:session_default_to_last')
-call add(g:session_persist_globals, 'g:session_persist_globals')
+" let g:session_persist_globals = ['&sessionoptions']
+
+" call add(g:session_persist_globals, 'g:session_default_overwrite')
+" call add(g:session_persist_globals, 'g:session_autoload')
+" call add(g:session_persist_globals, 'g:session_autosave')
+" call add(g:session_persist_globals, 'g:session_default_to_last')
+" call add(g:session_persist_globals, 'g:session_persist_globals')
 
 " Vim test -------------------------------
 let test#strategy = "neovim"
@@ -597,6 +609,7 @@ let g:test#echo_command = 0
 " hi Conceal guibg=NONE ctermbg=NONE ctermfg=DarkGray
 " autocmd BufRead * setlocal conceallevel=2 concealcursor=nv
 " autocmd BufRead * syn match LeadingSpace /\(^ *\)\@≤  /  containedin=ALL conceal cchar=·
+
 
 
 

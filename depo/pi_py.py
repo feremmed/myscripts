@@ -437,23 +437,13 @@ def suma(num1, num2):
     return num1+num2
 
 def resta(num1, num2):
-    return mum1-num2
+    return num1-num2
 
 def multiplica(num1, num2):
-    return mum1*num2
+    return num1*num2
 
 def divide(num1, num2):
-    return mum1/num2
-
-    try:
-        return num1/num2
-
-    except
-
-    ZeroDivisionError:
-        print("No se puede dividir entre 0")
-        return "Operación erronea"
-
+    return num1/num2
 
 op1=(int(input("Introduce el primer número: ")))
 
@@ -485,20 +475,17 @@ def suma(num1, num2):
     return num1+num2
 
 def resta(num1, num2):
-    return mum1-num2
+    return num1-num2
 
 def multiplica(num1, num2):
-    return mum1*num2
+    return num1*num2
 
 def divide(num1, num2):
-    return mum1/num2
 
     try:
         return num1/num2
 
-    except
-
-    ZeroDivisionError:
+    except ZeroDivisionError:
         print("No se puede dividir entre 0")
         return "Operación erronea"
 
@@ -534,44 +521,34 @@ def suma(num1, num2):
     return num1+num2
 
 def resta(num1, num2):
-    return mum1-num2
+    return num1-num2
 
 def multiplica(num1, num2):
-    return mum1*num2
+    return num1*num2
 
 def divide(num1, num2):
-    return mum1/num2
 
     try:
-
-        op1=(float(input("Introduce el primer número: ")))
-
-        op2=(float(input("Introduce el segundo numero: ")))
-
-        print("La división es : " + str(op1/op2))
-
-    except ValueError:
-
-        print("El valor introducido es erróneo")
+        return num1/num2
 
     except ZeroDivisionError:
-
         print("No se puede dividir entre 0!")
+        return "Operación errónea"
 
-    finally:
+while True:
+    try:
+        op1=(int(input("Introduce el primer número: ")))
 
-        print("Cálculo finalizado")
+        op2=(int(input("Introduce el segundo numero: ")))
 
-divide()
+        break
 
-
-op1=(int(input("Introduce el primer número: ")))
-
-op2=(int(input("Introduce el segundo número: ")))
+except ValueError:
+    print("Los valores introducidos no son correctos, intentalo de nuevo")
 
 operacion=input("Introduce la operación a realizar (suma,resta,multiplica,divide): ")
 
-f operacion=="suma":
+if operacion=="suma":
     print(suma(op1,op2))
 
 elif operacion=="resta":
@@ -587,3 +564,516 @@ else:
     print ("Operación no contemplada")
 
 print("Operación ejecutada. Continuación de ejecución del programa ")
+
+
+
+
+def divide():
+
+    op1=(float(input("Introduce el primer número: ")))
+
+    op2=(float(input("Introduce el segundo número: ")))
+
+    print("La división es: " + str(op1/op2))
+
+    print("Cálculo finalizado")
+
+divide()
+
+
+
+def divide():
+
+    try:
+
+        op1=(float(input("Introduce el primer número: ")))
+
+        op2=(float(input("Introduce el segundo número: ")))
+
+        print("La división es: " + str(op1/op2))
+
+    except ValueError:
+
+        print("El valor introducido es erróneo")
+
+    except ZeroDivisionError:
+
+        print("No se puede dividir entre 0!")
+
+    print("Cálculo finalizado")
+
+divide()
+
+# =======================================
+# 23 EXCEPCIONES III
+
+# (raise imprime el texto que elegimos para detallar el error)
+def evaluaEdad(edad):
+
+    if edad<0:
+        raise TypeError("No se permiten eadades negativas")
+
+    if edad<20:
+        return "eres muy joven"
+    elif edad<40:
+        return "Eres joven"
+    elif edad<65:
+        return "Eres maduro"
+    elif edad<100:
+        return "Cuídate..."
+
+print(evaluaEdad(15))
+
+
+
+import math
+
+def calcularRaiz(num1):
+
+    if num1<0:
+        raise ValueError ("El número no puede ser negativo")
+
+    else:
+        return math.sqrt(num1)
+
+op1=(int(input("Introduce un número: ")))
+
+print(calcularRaiz(op1))
+
+print("Programa terminado")
+
+
+
+import math
+
+def calcularRaiz(num1):
+
+    if num1<0:
+        raise ValueError ("El número no puede ser negativo")
+
+    else:
+        return math.sqrt(num1)
+
+op1=(int(input("Introduce un número: ")))
+
+try:
+    print(calcularRaiz(op1))
+
+except ValueError as ErrorDeNumeroNegativo:
+
+    print(ErrorDeNumeroNegativo)
+
+print("Programa terminado")
+
+
+
+# =======================================
+# 24 POO I
+
+# 2 FORMAS DE PROGRAMAR
+#     (PARADIGMAS)
+
+#
+#                     Paradigmas de
+#                    la programación
+#            _______________|______________
+#           |                              |
+# Programación orientada         Programación Orientada
+# a procedimientos                   a Objetos
+
+#Programación Orientada a procedimientos:
+#    Algunos ejemplos de lenguajes: Fortran, Cobol, Basic, etc.
+
+# DESVENTAJAS:
+# - Unidades de código muy grandes en aplicaciones complejas.
+# - En aplicaciones complejas de código resultaba difícil de descifrar.
+# - Poco reutilizable.
+# - Si existe fallo en alguna línea de código, es muy probable que el programa caiga.
+# - Aparición frecuente de código espagueti.
+# - Difícil de depurar por otros programadores en caso de necesidad o error.
+
+# Programación Orientada a Objetos
+# - Trasladar la naturaleza de los objetos de la vida real al código de programación.
+# - Los objetos tienen un estado, un comportamiento (¿Que puede hacer?), y unas propiedades.
+
+# Pongamos un ejemplo: El objeto coche.
+# - Un coche puede estar parado, circulando, estacionado, etc.
+# - Tiene color, peso, tamaño, etc.
+# - Puede arrancar, frenar, acelerar, girar, etc.
+
+# OBJETO:
+# Tiene propiedades (atributos):
+#     - Color
+#     - Peso
+#     - Alto
+#     - Largo
+
+# Tiene un comportamiento (¿Qué es capaz de hacer?):
+#     - Arrancar
+#     - Frenar
+#     - Girar
+#     - Acelerar
+
+# Algunos ejemplos de lenguajes: C++, Java, Visual.NET, etc.
+
+# VENTAJAS:
+# - Programas divididos en "trozos", "partes", "módulos", o "clases".
+# - Modularización.
+# - Muy reutilizable. Herencia.
+# - Si existe fallo en alguna línea del código, el programa continuará con su funcionamiento. Tratamiento de Excepciones.
+# - Encapsulamiento.
+
+
+# VOCABULARIO DE LA POO
+# - Clase.
+# - Objeto.
+# - Ejemplar de clase. Instancia de clase. Ejemplarizar una clase.
+# - Modularización.
+# - Encapsulamiento / encapsulación.
+# - Herencia.
+# - Polimorfismo.
+
+# =======================================
+# 25 POO II
+
+# CLASE: Modelo donde se redactan las características comunes de un grupo de objetos
+# INSTANCIA: Ejemplar pertenciente a una clase. instancia/ejemplar/objeto
+
+# OBJETO
+# Accediendo a propiedades y comportamiento (pseudocódigo)
+
+# Objeto
+# Accediendo a propiedades de objeto desde código (pseudocódigo):
+#     - miCoche.color="rojo"
+#     - miCoche.peso=1500
+#     - miCoche.ancho=2000
+#     - miCoche.alto=900
+# Accediendo a comportamiento de objeto desde código (pseudocódigo):
+#     - miCoche.arranca()
+#     - miCoche.frena()
+#     - miCoche.gira()
+#     - miCoche.acelera()
+
+# =======================================
+# 26 POO III
+
+class Coche():
+    largoChasis=250
+    anchoChasis=120
+    ruedas=4
+    enmarcha=False
+
+def arrancar(self):
+    pass
+
+miCoche=Coche()
+
+
+# con estado
+class Coche():
+    largoChasis=250
+    anchoChasis=120
+    ruedas=4
+    enmarcha=False
+
+    def arrancar(self):
+        self.enmarcha=True
+
+    def estado(self):
+        if(self.enmarcha):
+            return "El coche está en marcha"
+
+        else:
+
+            return "El coche está parado"
+
+miCoche=Coche()
+
+print("El largo del coche es: ",miCoche.largoChasis)
+print("El coche tiene ", miCoche.ruedas, " ruedas")
+# miCoche.arrancar()
+
+print(miCoche.estado())
+
+# =======================================
+# 27 POO IV
+
+class Coche():
+    largoChasis=250
+    anchoChasis=120
+    ruedas=4
+    enmarcha=False
+
+    def arrancar(self,arrancamos):
+        self.enmarcha=arrancamos
+
+        if(self.enmarcha):
+            return "El coche está en marcha"
+
+        else:
+
+            return "El coche está parado"
+
+
+        self.enmarcha=True
+
+    def estado(self):
+        print("El coche tiene " , self.ruedas, " ruedas. Un ancho de ", self.anchoChasis, " y un largo de ", self.largoChasis)
+
+
+miCoche=Coche()
+
+print("El largo del coche es: ",miCoche.largoChasis)
+print("El coche tiene ", miCoche.ruedas, " ruedas")
+print(miCoche.arrancar(True))
+
+miCoche.estado()
+
+print("------------A continuación creamos el segundo objeto------------")
+
+miCoche2=Coche()
+
+print("El largo del coche es: ",miCoche2.largoChasis)
+print("El coche tiene ", miCoche2.ruedas, " ruedas")
+print(miCoche2.arrancar(False))
+miCoche2.estado()
+
+
+
+
+class Coche():
+    largoChasis=250
+    anchoChasis=120
+    ruedas=4
+    enmarcha=False
+
+    def arrancar(self,arrancamos):
+        self.enmarcha=arrancamos
+
+        if(self.enmarcha):
+            return "El coche está en marcha"
+
+        else:
+
+            return "El coche está parado"
+
+
+        self.enmarcha=True
+
+    def estado(self):
+        print("El coche tiene " , self.ruedas, " ruedas. Un ancho de ", self.anchoChasis, " y un largo de ", self.largoChasis)
+
+
+miCoche=Coche()
+
+print(miCoche.arrancar(True))
+
+miCoche.estado()
+
+print("------------A continuación creamos el segundo objeto------------")
+
+miCoche2=Coche()
+
+print(miCoche2.arrancar(False))
+miCoche2.estado()
+
+
+
+
+
+class Coche():
+
+    def __init__(self):
+
+        self.__largoChasis=250
+        self.__anchoChasis=120
+        self.__ruedas=4
+        self.__enmarcha=False
+
+    def arrancar(self,arrancamos):
+        self.__enmarcha=arrancamos
+
+        if(self.__enmarcha):
+            return "El coche está en marcha"
+
+        else:
+
+            return "El coche está parado"
+
+
+        self.enmarcha=True
+
+    def estado(self):
+        print("El coche tiene " , self.__ruedas, " ruedas. Un ancho de ", self.__anchoChasis, " y un largo de ", self.__largoChasis)
+
+
+miCoche=Coche()
+
+print(miCoche.arrancar(True))
+
+miCoche.estado()
+
+print("------------A continuación creamos el segundo objeto------------")
+
+miCoche2=Coche()
+
+print(miCoche2.arrancar(False))
+
+miCoche2.ruedas=2
+
+miCoche2.estado()
+
+
+# =======================================
+# 28 POO V
+
+
+class Coche():
+
+    def __init__(self):
+
+        self.__largoChasis=250
+        self.__anchoChasis=120
+        self.__ruedas=4
+        self.__enmarcha=False
+
+    def arrancar(self,arrancamos):
+        self.__enmarcha=arrancamos
+
+        if (self.__enmarcha):
+            chequeo=self.chequeo_interno()
+
+        if(self.__enmarcha and chequeo):
+            return "El coche está en marcha"
+
+        elif(self.__enmarcha and chequeo==False):
+            return"Algo ha ido mal en el chequeo. No podemos arrancar"
+        else:
+
+            return "El coche está parado"
+
+
+        self.enmarcha=True
+
+    def estado(self):
+        print("El coche tiene " , self.__ruedas, " ruedas. Un ancho de ", self.__anchoChasis, " y un largo de ", self.__largoChasis)
+
+
+#   def __chequeo_interno(self):
+    def chequeo_interno(self):
+        print("realizando chequeo interno")
+
+        self.gasolina="ok"
+        self.aceite="ok"
+        self.puertas="cerradas"
+
+        if(self.gasolina=="ok" and self.aceite=="ok" and self.puertas=="cerradas"):
+
+            return True
+
+        else:
+
+            return False
+
+
+miCoche=Coche()
+
+print(miCoche.arrancar(True))
+
+miCoche.estado()
+
+print("------------A continuación creamos el segundo objeto------------")
+
+miCoche2=Coche()
+
+print(miCoche2.arrancar(False))
+
+miCoche2.estado()
+
+
+
+# =======================================
+# 29 POO VI
+
+class Vehiculos():
+
+    def __init__(self, marca, modelo):
+
+        self.marca=marca
+        self.modelo=modelo
+        self.enmarcha=False
+        self.acelera=False
+        self.frena=False
+
+    def arrancar(self):
+
+        self.enmarcha=True
+
+    def acelera(self):
+        self.acelera=True
+
+    def frenar(self):
+        self.frena=True
+
+    def estado(self):
+        print ("Marca: ", self.marca, "\nModelo: ", self.modelo, "\nEn marcha: ", self.enmarcha, "\nAcelerando: ", self.acelera, "\nFrenando: ",self.frena)
+
+class Moto(Vehiculos):
+    pass
+
+miMoto=Moto("Honda", "CBR")
+
+miMoto.estado()
+
+
+# =======================================
+# 29 POO VII
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

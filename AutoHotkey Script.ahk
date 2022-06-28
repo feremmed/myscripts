@@ -5,7 +5,7 @@ F2::Suspend
 
 ::lorem:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
+; - - - - EMULADOR VIM - - - -
 #if GetKeyState("Capslock","T")
 2::^+n
 #if GetKeyState("Capslock","T")
@@ -58,56 +58,6 @@ x::^x
 c::Delete
 #if GetKeyState("Capslock","T")
 b::^left
-#if GetKeyState("Capslock","T")
-,::Browser_Back
-#if GetKeyState("Capslock","T")
-.::Browser_Forward
-
-#if GetKeyState("k","P")
-m::+F10
-#if GetKeyState("z","P")
-x::!F4
-#if GetKeyState("x","P")
-z::!F4
-#if GetKeyState("x","P")
-c::Volume_Mute
-#if GetKeyState("c","P")
-x::Volume_Down
-#if GetKeyState("c","P")
-z::Volume_Up
-#if GetKeyState("f","P")
-q::esc
-
-#if GetKeyState(",","P")
-m::Volume_Mute
-#if GetKeyState("m","P")
-,::Volume_Down
-#if GetKeyState("m","P")
-.::Volume_Up
-#if getkeystate("Alt","P")
-l::TAB
-#if getkeystate("Alt","P")
-k::+TAB
-#if getkeystate("m","P")
-l::TAB
-#if getkeystate("m","P")
-k::+TAB
-#if getkeystate("0","P")
-9::Capslock
-#if getkeystate("n","P")
-l::Delete
-#if getkeystate("n","P")
-k::Esc
-#if GetKeyState(",","P")
-q::esc
-#if GetKeyState(",","P")
-z::F3
-#if GetKeyState(",","P")
-x::F4
-#if GetKeyState(",","P")
-.::!F4
-#if GetKeyState(".","P")
-,::!F4
 
 #if getkeystate("space","p")
 h::left
@@ -121,6 +71,8 @@ l::right
 o::enter
 #if GetKeyState("Space","P")
 i::BS
+
+; - - - - MEDIA PLAYER - - - -
 #if GetKeyState("Space","P")
 ,::Media_Prev
 #if GetKeyState("Space","P")
@@ -128,11 +80,72 @@ i::BS
 #if GetKeyState("Space","P")
 m::Media_Play_Pause
 
+; - - - - NAVEGADOR - - - -
+#if GetKeyState("Capslock","T")
+,::Browser_Back
+#if GetKeyState("Capslock","T")
+.::Browser_Forward
+
+; - - - - MY KEYS - - - -
+#if getkeystate("0","P")
+9::Capslock
+#if GetKeyState("k","P")
+m::+F10
+
+; - - - - VENTANAS - - - - -
+#if getkeystate("Alt","P")
+l::TAB
+#if getkeystate("Alt","P")
+k::+TAB
+
+; - - - - TABUALAR - - - - 
+#if getkeystate("m","P")
+l::TAB
+#if getkeystate("m","P")
+k::+TAB
+
+; - - - - DELOUT - - - -
+#if getkeystate("n","P")
+l::Delete
+#if getkeystate("n","P")
+k::Esc
+#if GetKeyState("f","P")
+d::Delete
+#if GetKeyState("f","P")
+q::esc
+#if GetKeyState(".","P")
+,::!F4
+#if GetKeyState("z","P")
+x::!F4
+
+; - - - - AUDIO - - - -
+#if GetKeyState("c","P")
+z::Volume_Up
+#if GetKeyState("c","P")
+x::Volume_Down
+#if GetKeyState("x","P")
+c::Volume_Mute
+
+#if GetKeyState("m","P")
+.::Volume_Up
+#if GetKeyState("m","P")
+,::Volume_Down
+#if GetKeyState(",","P")
+m::Volume_Mute
+
+; - - - - MULTICURSOR - - - -
+#if GetKeyState(",","P")
+z::F3
+#if GetKeyState(",","P")
+x::F4
+
+; - - - - MIZAR - - - -
 #if GetKeyState("LWin","P")
 f::Up
 #if GetKeyState("LWin","P")
 c::Down
 
+; - - - - ESPAÑOL - - - -
 #a::SendInput {á}
 #e::SendInput {é}
 #i::SendInput {í}
@@ -143,6 +156,10 @@ c::Down
 #1::SendInput {¡}
 #/::SendInput {¿}
 #.::SendInput {¿}
+
+
+; - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 
 
 ; caps_to_esc.ahk
