@@ -1,38 +1,30 @@
 
-class Vehiculos():
+class Coche():
 
-    def __init__(self, marca, modelo):
+    def desplazamiento(self):
+         print("Me desplazo utilizando cuatro ruedas")
 
-        self.marca=marca
-        self.modelo=modelo
-        self.enmarcha=False
-        self.acelera=False
-        self.frena=False
 
-    def arrancar(self):
+class Moto():
 
-        self.enmarcha=True
+    def desplazamiento(self):
+         print("Me desplazo utilizando dos ruedas")
 
-    def acelera(self):
-        self.acelera=True
+class Camion():
 
-    def frenar(self):
-        self.frena=True
+    def desplazamiento(self):
+         print("Me desplazo utilizando seis ruedas")
 
-    def estado(self):
-        print ("Marca: ", self.marca, "\nModelo: ", self.modelo, "\nEn marcha: ", self.enmarcha, "\nAcelerando: ", self.acelera, "\nFrenando: ",self.frena)
 
-class Moto(Vehiculos):
-    hcaballito=""
-    def caballito(self):
-        hcaballito="Voy haciendo el caballito
 
-    def estado(self):
-        print ("Marca: ", self.marca, "\nModelo: ", self.modelo, "\nEn marcha: ", self.enmarcha, "\nAcelerando: ", self.acelera, "\nFrenando: ",self.frena, "\n", self.hcaballito)
+def desplazamientoVehiculo(vehiculo):
+    vehiculo.desplazamiento()
 
-miMoto=Moto("Honda", "CBR")
 
-miMoto.estado()
+miVehiculo=Camion()
+
+desplazamientoVehiculo(miVehiculo)
+
 
 
 

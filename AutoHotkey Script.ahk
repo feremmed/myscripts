@@ -123,17 +123,19 @@ x::!F4
 z::Volume_Up
 #if GetKeyState("c","P")
 x::Volume_Down
-#if GetKeyState("x","P")
+#if GetKeyState("z","P")
 c::Volume_Mute
 
 #if GetKeyState("m","P")
 .::Volume_Up
 #if GetKeyState("m","P")
 ,::Volume_Down
-#if GetKeyState(",","P")
+#if GetKeyState(".","P")
 m::Volume_Mute
 
-; - - - - MULTICURSOR - - - -
+; - - - - VIM / NVIM - - - -
+#if GetKeyState(",","P")
+q::esc
 #if GetKeyState(",","P")
 z::F3
 #if GetKeyState(",","P")
