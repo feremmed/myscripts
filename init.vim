@@ -1,6 +1,5 @@
 = = = = = = { C O P I A }  = = = = = =
 
-
 "NEO VIM
 
 syntax enable
@@ -117,9 +116,6 @@ call plug#end()
 "============================================================
 
 " M O V E M E N T
-xnoremap S zs
-noremap S zs
-noremap M zt
 noremap J 18j
 noremap K 18k
 noremap H 34h
@@ -166,23 +162,26 @@ nnoremap dl yyp
 nnoremap vf v$
 nnoremap vc v0
 nnoremap U <C-r>
+nnoremap s <nop>
+xnoremap s <nop>
+nnoremap dd <nop>
+xnoremap dd <nop>
 nnoremap cc cc<esc>
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
 
-nnoremap <leader>se <C-w>=
-nnoremap <leader>sx <C-w>x
+nnoremap <leader>si <C-w>=
+nnoremap <leader>sd <C-w><C-x>
 nnoremap <leader>sw :set nowrap!<CR>
 nnoremap <leader>sr :set nu! rnu!<CR>
 nnoremap <leader>sc :s ww=<,>,h,l<CR>
-nnoremap <leader>s :source ~\AppData\Local\nvim\init.vim<CR>
+nnoremap <leader>ss :source ~\AppData\Local\nvim\init.vim<CR>
 
 nnoremap <leader>nt :tabnew<CR>
 nnoremap <leader>ns :browse confirm saveas<CR>
 nnoremap <leader>nv :vsp<CR>
 nnoremap <leader>nh :sp<CR>
 nnoremap <leader>nb :enew<CR>
-
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q!<CR>
 nnoremap <leader>dz :qa!<CR>
@@ -206,11 +205,10 @@ vnoremap <C-c> y<Esc>
 " map <C-x> x
 noremap <C-v> p
 inoremap <C-v> <Esc>pi
-noremap <C-e> <Esc>ggVG
-inoremap <C-e> <Esc>ggVG
 noremap <CR> i<CR><esc>
 noremap <BS> X
 inoremap xx <Delete>
+
 inoremap )) (  )<left><left>
 inoremap >> <  ><left><left>
 inoremap ]] [  ]<left><left>
@@ -225,21 +223,26 @@ inoremap [[ []<left>
 inoremap {{ {}<left>
 inoremap '' ''<left>
 inoremap "" ""<left>
+inoremap .. <BS>
 
-" C O M M A   L A Y E R
+" C O M M A   L A Y E R  command
+",h,j,k,l to service Tmux plug, move in windows
+",q,z,x,m in AutoHotKey
+inoremap ,3 <Esc>ggVGy<C-o>zta
+noremap ,4 <Esc>ggVG
+noremap ,5 ggjdG<C-w><C-w>ggVGy<C-o>zt<C-w><C-w>p
+noremap ,e <Esc>ggVGy<C-o>zt
 noremap ,, o<esc>
 inoremap ,, <esc>o
+inoremap ,o <C-o>
 inoremap ,p <esc>pi
+noremap ,a <C-a>
+noremap ,s <C-x>
 inoremap ,a <esc>la
-inoremap ,h <esc>ha
-inoremap ,j <esc>ji
-inoremap ,k <esc>ki
 inoremap ,y <esc>viwyi
 noremap ,y viwy
 inoremap ,d <esc>ciw
 noremap ,d diw
-inoremap ,v <esc>_i
-noremap ,v _
 inoremap ,w <Esc>wa
 inoremap ,e <Esc>ea
 inoremap ,b <Esc>bi
@@ -247,35 +250,68 @@ inoremap ,f <Esc>$a
 noremap ,f $
 inoremap ,c <Esc>0i
 noremap ,c 0
+inoremap ,v <esc>_i
+noremap ,v _
 
+" To resize window width
+nnoremap ,t :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
+nnoremap ,r :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
+nnoremap ,m :exe " resize " . (winheight(0) * 3/2)<CR>
+nnoremap ,n :exe " resize " . (winheight(0) * 2/3)<CR>
+
+" whrite with comma layer
+inoremap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>10ki
 inoremap ,r -
 inoremap ,s +
 inoremap ,t =
 inoremap ,g _
 
-inoremap ,<CR> <CR><CR><CR><CR><CR><CR><CR><CR><CR><CR><esc>10ki
-
 " free keys comma layer in normal
-" luionm WSGYVAHJKLNVBM 1234567890-=
+" ui WSGYVAHJKLNVBM 1267890-=
 
-" P O I N T   C O M M A   L A Y E R
+
+" S E M I C O L O N   L A Y E R
+imap ;dj <esc>dji
+imap ;dk <esc>dki
+imap ;dl <esc>dli
+imap ;dh <esc>dhi
+inoremap ;cc <esc>cc
+nnoremap ;dd <esc>dd
+xnoremap ;dd dd
+inoremap ;dd <esc>ddi
+inoremap ;df <esc>ld$a
+inoremap ;dc <esc>d0i
+inoremap ;vf <esc>v$
+inoremap ;vc <esc>v0
+inoremap ;h <esc>ha
+inoremap ;j <esc>ji
+inoremap ;k <esc>ki
+inoremap ;l <esc>la
+inoremap ;u <esc>ui
+inoremap ;o <esc>O
+inoremap ;m <esc>zta
+noremap ;m zt
+
+" whrite with semicolon layer
 inoremap ;q (  )<left><left>
 inoremap ;w ()<left>
 inoremap ;e ()
 inoremap ;r (
 inoremap ;t )
 inoremap ;a ¡!<left>
-inoremap ;s ¡
-inoremap ;d !
+inoremap ;s !
+inoremap ;d ¡
 inoremap ;z ¿?<left>
 inoremap ;x ¿
-inoremap ;m <esc>cc
-inoremap ;n <esc>ddi
-inoremap ;f <esc>ld$a
-inoremap ;c <esc>d0i
-inoremap ;u <esc>ui
-inoremap ;; <esc>O
-
+inoremap ;; <CR><left>
+inoremap ;n ñ
+inoremap ;A Á
+inoremap ;E É
+inoremap ;I Í
+inoremap ;O Ó
+inoremap ;U Ú
+inoremap ;N Ñ
+inoremap ;b \
 
 "  - - - - - - - - - - - - - - - - - - - - - - - -
 " VANILA NVIM
@@ -311,19 +347,6 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
-
-" To resize window width
-nnoremap = :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
-nnoremap - :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
-
-nnoremap ,t :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
-nnoremap ,r :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
-
-nnoremap ( :exe " resize " . (winheight(0) * 3/2)<CR>
-nnoremap ) :exe " resize " . (winheight(0) * 2/3)<CR>
-
-nnoremap ;t :exe " resize " . (winheight(0) * 3/2)<CR>
-nnoremap ;r :exe " resize " . (winheight(0) * 2/3)<CR>
 
 " empty spaces at  the of lineas on save of python files
 autocmd BufWritePre *.py :%s/\s\+$//e
@@ -476,10 +499,10 @@ nnoremap <Leader>pd :Ack! --py  C:/Users/DELL/myDocs/<left><left><left><left><le
 
 " Tmux --------------------------------------
 let g:tmux_navigator_no_mappings = 1
-nnoremap ;k :TmuxNavigateUp<CR>
-nnoremap ;j :TmuxNavigateDown<CR>
-nnoremap ;h :TmuxNavigateLeft<CR>
-nnoremap ;l :TmuxNavigateRight<CR>
+nnoremap ,k :TmuxNavigateUp<CR>
+nnoremap ,j :TmuxNavigateDown<CR>
+nnoremap ,h :TmuxNavigateLeft<CR>
+nnoremap ,l :TmuxNavigateRight<CR>
 
 " Rainbow --------------------------------------
 let g:rainbow_active = 1

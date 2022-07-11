@@ -418,10 +418,13 @@ let g:syntastic_check_on_wq = 0
 let g:test#strategy = "vimterminal"
 
 " Fuzzy finder -----------------------------
-nnoremap <leader>x :Files E:/eproj/<CR>
-nnoremap <leader>5 :Files 
-nnoremap <leader>6 :Lines<CR>
-nnoremap <leader>7 :History<CR>
+
+nnoremap <leader>fe :Files E:/eproj/<CR>
+nnoremap <leader>fc :Files ~/cproj/<CR>
+nnoremap <leader>fd :Files ~/myDocs/<CR>
+nnoremap <leader>ff :Files 
+nnoremap <leader>fl :Lines<CR>
+nnoremap <leader>fh :History<CR>
 " according bat's page said
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'bat --color=always --style=numbers --line-range=:500 {}']}, <bang>0)
@@ -436,10 +439,13 @@ cnoreabbrev Ack Ack!
 let g:ackprg = "ag --vimgrep"
 let g:ackhighlight = 1
 
-" nnoremap <C-j> :cnext<CR>
-" nnoremap <C-k> :cprevious<CR>
+nnoremap <C-j> :cnext<CR>
+nnoremap <C-k> :cprevious<CR>
 
-nnoremap <Leader>p :Ack! --py  E:\eproj\<left><left><left><left><left><left><left><left><left><left>
+nnoremap <Leader>pp :Ack! --py 
+nnoremap <Leader>pe :Ack! --py  E:/eproj/<left><left><left><left><left><left><left><left><left><left>
+nnoremap <Leader>pc :Ack! --py  C:/Users/DELL/cproj/<left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left>
+nnoremap <Leader>pd :Ack! --py  C:/Users/DELL/myDocs/<left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left>
 
 " Tmux --------------------------------------
 let g:tmux_navigator_no_mappings = 1
